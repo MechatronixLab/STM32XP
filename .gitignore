@@ -1,0 +1,81 @@
+# Temporary files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-backups
+*.kicad_prl
+*.sch-bak
+*~
+_autosave-*
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+
+# Autorouter files (exported from Pcbnew)
+*.dsn
+*.ses
+
+#settings
+.settings/
+
+#metadata
+.metadata/
+
+#Debug
+Debug/
+debug/
+Release/
+release
+
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+*.bin
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+
+#vscode
+.vs
+.vscode
+vcpkg-configuration.json
+CMakePresets.json
+CMakeLists.txt
+cmake/
