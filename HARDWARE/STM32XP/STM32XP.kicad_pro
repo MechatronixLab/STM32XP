@@ -563,6 +563,40 @@
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
+        "name": "SPI",
+        "pcb_color": "rgb(63, 63, 127)",
+        "schematic_color": "rgb(63, 92, 127)",
+        "track_width": 0.2,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "SWD",
+        "pcb_color": "rgb(63, 63, 0)",
+        "schematic_color": "rgb(63, 63, 0)",
+        "track_width": 0.2,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
         "name": "VBUS",
         "pcb_color": "rgb(132, 0, 132)",
         "schematic_color": "rgb(132, 0, 132)",
@@ -626,6 +660,18 @@
       {
         "netclass": "VBUS",
         "pattern": "VBUS"
+      },
+      {
+        "netclass": "SPI",
+        "pattern": "*SPI*"
+      },
+      {
+        "netclass": "SWD",
+        "pattern": "SW*"
+      },
+      {
+        "netclass": "SWD",
+        "pattern": "NRST"
       }
     ]
   },
