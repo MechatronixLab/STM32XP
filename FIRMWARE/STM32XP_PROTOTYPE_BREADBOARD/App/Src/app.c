@@ -9,6 +9,8 @@
 
 void APP_Init(void)
 {
+	DISPLAY_Init();
+
 	APP_Run();
 }
 

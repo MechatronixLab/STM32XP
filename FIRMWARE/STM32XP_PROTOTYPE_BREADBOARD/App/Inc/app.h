@@ -10,6 +10,8 @@
 
 #include "main.h"
 
+#include "display.h"
+
 void APP_Init(void);
 void APP_Run(void);
 
