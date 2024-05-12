@@ -11,6 +11,8 @@ void APP_Init(void)
 {
 	DISPLAY_Init();
 
+	CONSOLE_Init();
+
 	APP_Run();
 }
 
