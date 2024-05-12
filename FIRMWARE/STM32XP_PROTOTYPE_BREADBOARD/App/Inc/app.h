@@ -13,6 +13,7 @@
 #include "buzzer.h"
 #include "console.h"
 #include "display.h"
+#include "isr.h"
 
 void APP_Init(void);
 void APP_Run(void);
