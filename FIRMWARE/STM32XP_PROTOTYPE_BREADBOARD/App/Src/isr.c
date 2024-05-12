@@ -22,20 +22,30 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 	}
 }
 
-//void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
-//{
-//	if (GPIO_Pin == B1_Pin)
-//	{
-//		BSP_LED_Toggle(LED_BLUE);
-//	}
-//
-//	else if (GPIO_Pin == B2_Pin)
-//	{
-//		BSP_LED_Toggle(LED_GREEN);
-//	}
-//
-//	else if (GPIO_Pin == B3_Pin)
-//	{
-//		BSP_LED_Toggle(LED_RED);
-//	}
-//}
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)	// TODO: Debouncing
+{
+	if (GPIO_Pin == BUTTON_UP_Pin)
+	{
+		CLI_Write("UP \n");
+	}
+
+	else if (GPIO_Pin == BUTTON_DOWN_Pin)
+	{
+		CLI_Write("DOWN \n");
+	}
+
+	else if (GPIO_Pin == BUTTON_CENTER_Pin)
+	{
+		CLI_Write("CENTER \n");
+	}
+
+	else if (GPIO_Pin == BUTTON_LEFT_Pin)
+	{
+		CLI_Write("LEFT \n");
+	}
+
+	else if (GPIO_Pin == BUTTON_RIGHT_Pin)
+	{
+		CLI_Write("RIGHT \n");
+	}
+}

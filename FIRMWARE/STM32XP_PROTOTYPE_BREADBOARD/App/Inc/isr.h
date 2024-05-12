@@ -10,6 +10,8 @@
 
 #include "main.h"
 
+#include "cli.h"
+
 extern TIM_HandleTypeDef htim5;
 
 #define ISR_INTERRUPT_TIMER_HANDLE	htim5
@@ -25,6 +27,6 @@ void ISR_StartInterruptTimer(void);
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim);
 
-//void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin);
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin);
 
 #endif /* INC_ISR_H_ */
