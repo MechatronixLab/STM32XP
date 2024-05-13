@@ -21,7 +21,14 @@ extern TIM_HandleTypeDef htim5;
 //#define TIM16_PSC (48000 - 1)					// 1 kHz
 //#define TIM16_ARR (1000/TIM16_SAMPLE_RATE - 1)	// TIM16_SAMPLE_RATE Hz
 
+#define ISR_BUTTON_UP		0x01
+#define ISR_BUTTON_DOWN		0x02
+#define ISR_BUTTON_CENTER	0x04
+#define ISR_BUTTON_LEFT		0x08
+#define ISR_BUTTON_RIGHT	0x10
+
 extern uint8_t	ISR_interrupt_flag;
+extern uint8_t ISR_button;
 
 void ISR_StartInterruptTimer(void);
 

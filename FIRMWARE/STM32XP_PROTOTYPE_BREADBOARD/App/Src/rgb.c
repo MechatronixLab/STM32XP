@@ -1,0 +1,29 @@
+/*
+ * rgb.c
+ *
+ *  Created on: May 12, 2024
+ *      Author: Eng. André A. M. Araújo
+ */
+
+#include "rgb.h"
+
+void RGB_On (void)
+{
+	HAL_TIM_PWM_Start(&RGB_TIMER_HANDLE, RGB_R_CHANNEL);
+	HAL_TIM_PWM_Start(&RGB_TIMER_HANDLE, RGB_G_CHANNEL);
+	HAL_TIM_PWM_Start(&RGB_TIMER_HANDLE, RGB_B_CHANNEL);
+}
+
+void RGB_Off(void)
+{
+	HAL_TIM_PWM_Stop(&RGB_TIMER_HANDLE, RGB_R_CHANNEL);
+	HAL_TIM_PWM_Stop(&RGB_TIMER_HANDLE, RGB_G_CHANNEL);
+	HAL_TIM_PWM_Stop(&RGB_TIMER_HANDLE, RGB_B_CHANNEL);
+}
+
+void RGB_SetColor(uint16_t R, uint16_t G, uint16_t B)
+{
+	__HAL_TIM_SET_COMPARE(&RGB_TIMER_HANDLE, RGB_R_CHANNEL, R);
+	__HAL_TIM_SET_COMPARE(&RGB_TIMER_HANDLE, RGB_G_CHANNEL, G);
+	__HAL_TIM_SET_COMPARE(&RGB_TIMER_HANDLE, RGB_B_CHANNEL, B);
+}

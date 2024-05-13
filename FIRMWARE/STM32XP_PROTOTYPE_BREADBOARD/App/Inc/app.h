@@ -14,6 +14,7 @@
 #include "console.h"
 #include "display.h"
 #include "isr.h"
+#include "rgb.h"
 
 void APP_Init(void);
 void APP_Run(void);
