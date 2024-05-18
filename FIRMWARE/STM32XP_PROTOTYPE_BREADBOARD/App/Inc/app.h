@@ -15,6 +15,7 @@
 #include "display.h"
 #include "isr.h"
 #include "rgb.h"
+#include "sdcard.h"
 
 void APP_Init(void);
 void APP_Run(void);

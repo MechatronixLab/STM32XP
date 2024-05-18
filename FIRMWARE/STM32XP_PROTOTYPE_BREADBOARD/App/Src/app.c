@@ -12,6 +12,8 @@ void APP_Init(void)
 	CONSOLE_Init();
 	DISPLAY_Init();
 
+	SDCARD_Test();
+
 	BUZZER_SetVolume(1);
 	RGB_On();
 

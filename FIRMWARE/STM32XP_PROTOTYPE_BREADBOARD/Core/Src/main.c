@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "adc.h"
+#include "fatfs.h"
 #include "i2c.h"
 #include "rtc.h"
 #include "spi.h"
@@ -104,6 +105,7 @@ int main(void)
   MX_USART1_UART_Init();
   MX_TIM5_Init();
   MX_TIM10_Init();
+  MX_FATFS_Init();
   /* USER CODE BEGIN 2 */
 
   APP_Init();

@@ -93,7 +93,7 @@ static const uint8_t MECHATRONIX_LAB_LOGO_64x64[] =
 
 void DISPLAY_Init(void)
 {
-	uint16_t dt = 100;
+	uint16_t dt = 1000;
 //	uint8_t i = 0;
 	char display_buffer[16];
 
@@ -110,7 +110,7 @@ void DISPLAY_Init(void)
 	OLED_SetCursor(64, 7);
 	GFX_DrawString((uint8_t *)GFX_font_5x7, "A.M.ARAUJO");
 
-	HAL_Delay(20 * dt);
+	HAL_Delay(dt);
 
 	sprintf(display_buffer, "V: %d.%d.%d  ", V_MAJOR, V_MINOR, V_PATCH);
 
@@ -123,7 +123,7 @@ void DISPLAY_Init(void)
 	OLED_SetCursor(64, 2);
 	GFX_DrawString((uint8_t *)GFX_font_5x7, display_buffer);
 
-	HAL_Delay(20 * dt);
+//	HAL_Delay(2 * dt);
 
 //	OLED_Clear();
 

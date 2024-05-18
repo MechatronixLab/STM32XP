@@ -10,7 +10,9 @@
 
 #include "usart.h"
 
+#include <stdio.h>
 #include <string.h>
+#include <stdarg.h>
 
 extern UART_HandleTypeDef 	huart1;
 
@@ -18,5 +20,7 @@ extern UART_HandleTypeDef 	huart1;
 
 void CLI_Write(char * buffer);
 void CLI_NewLine(void);
+
+void CLI_printf(const char *fmt, ...);	//
 
 #endif /* INC_CLI_H_ */

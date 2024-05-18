@@ -77,6 +77,8 @@ void Error_Handler(void);
 #define BUTTON_CENTER_Pin GPIO_PIN_2
 #define BUTTON_CENTER_GPIO_Port GPIOB
 #define BUTTON_CENTER_EXTI_IRQn EXTI2_IRQn
+#define SD_CS_Pin GPIO_PIN_12
+#define SD_CS_GPIO_Port GPIOB
 #define BUTTON_2_Pin GPIO_PIN_8
 #define BUTTON_2_GPIO_Port GPIOA
 #define BUTTON_2_EXTI_IRQn EXTI9_5_IRQn
