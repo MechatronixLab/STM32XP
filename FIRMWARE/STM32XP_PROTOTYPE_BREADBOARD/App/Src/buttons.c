@@ -26,7 +26,6 @@ void BUTTONS_debounce(void)
 					^ (HAL_GPIO_ReadPin(BUTTON_LEFT_GPIO_Port  , BUTTON_LEFT_Pin  ) * BUTTONS_LEFT  )
 					^ (HAL_GPIO_ReadPin(BUTTON_RIGHT_GPIO_Port , BUTTON_RIGHT_Pin ) * BUTTONS_RIGHT )
 					^ (HAL_GPIO_ReadPin(BUTTON_USER_GPIO_Port  , BUTTON_USER_Pin  ) * BUTTONS_USER  );
-//	current_buttons = (current_buttons ^ 0xFFFF);
 
 	if (current_buttons == previous_buttons)
 	{

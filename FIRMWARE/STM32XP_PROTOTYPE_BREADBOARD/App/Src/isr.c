@@ -32,6 +32,15 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)	// TODO: Debouncing
 {
+	__HAL_GPIO_EXTI_CLEAR_IT(BUTTONS_MASK_GPIO);
+	HAL_NVIC_DisableIRQ(EXTI0_IRQn);
+	HAL_NVIC_DisableIRQ(EXTI1_IRQn);
+	HAL_NVIC_DisableIRQ(EXTI2_IRQn);
+	HAL_NVIC_DisableIRQ(EXTI4_IRQn);
+	HAL_NVIC_DisableIRQ(EXTI9_5_IRQn);
+	HAL_NVIC_DisableIRQ(EXTI15_10_IRQn);
+	__HAL_GPIO_EXTI_CLEAR_IT(BUTTONS_MASK_GPIO);
+
 	switch (GPIO_Pin)
 	{
 		case BUTTON_UP_Pin    :
@@ -39,24 +48,15 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)	// TODO: Debouncing
 		case BUTTON_CENTER_Pin:
 		case BUTTON_LEFT_Pin  :
 		case BUTTON_RIGHT_Pin :
-
-			CLI_Write("Directional Button pressed \r\n");
-
-			HAL_NVIC_DisableIRQ(EXTI0_IRQn);
-			HAL_NVIC_DisableIRQ(EXTI1_IRQn);
-			HAL_NVIC_DisableIRQ(EXTI2_IRQn);
-			HAL_NVIC_DisableIRQ(EXTI4_IRQn);
-			HAL_NVIC_DisableIRQ(EXTI9_5_IRQn);
-			HAL_NVIC_DisableIRQ(EXTI15_10_IRQn);
-
-			HAL_TIM_Base_Start_IT(&ISR_DEBOUNCE_TIMER_HANDLER);
-
+			CLI_Write("Directional Button pressed: ");
 			break;
 
 		case BUTTON_USER_Pin  :
 			CLI_Write("USER Button pressed \r\n");
 			break;
 	}
+
+	HAL_TIM_Base_Start_IT(&ISR_DEBOUNCE_TIMER_HANDLER);
 
 //	if (GPIO_Pin == BUTTON_UP_Pin)
 //	{
