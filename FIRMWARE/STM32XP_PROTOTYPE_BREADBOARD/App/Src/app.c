@@ -28,27 +28,34 @@ void APP_Run(void)
 		{
 			ISR_interrupt_flag = 0;
 			HAL_GPIO_TogglePin(LED_USER_GPIO_Port, LED_USER_Pin);
+		}
 
-			switch (ISR_button)
+		if (BUTTONS_debounced_press)
+		{
+			switch (BUTTONS_output)
 			{
-				case ISR_BUTTON_UP:
+				case BUTTONS_UP:
 					RGB_SetColor(200, 200,   0);
 					break;
 
-				case ISR_BUTTON_DOWN:
+				case BUTTONS_DOWN:
 					RGB_SetColor(  0, 200,   0);
 					break;
 
-				case ISR_BUTTON_CENTER:
+				case BUTTONS_CENTER:
 					RGB_SetColor(  0, 200, 200);
 					break;
 
-				case ISR_BUTTON_LEFT:
+				case BUTTONS_LEFT:
 					RGB_SetColor(  0,   0, 200);
 					break;
 
-				case ISR_BUTTON_RIGHT:
+				case BUTTONS_RIGHT:
 					RGB_SetColor(200,   0,   0);
+					break;
+
+				case BUTTONS_USER:
+					RGB_SetColor(200, 200, 200);
 					break;
 
 				default:
@@ -56,6 +63,8 @@ void APP_Run(void)
 					break;
 			}
 			ISR_button = 0;
+
+			BUTTONS_debounced_press = 0;
 		}
 	}
 }

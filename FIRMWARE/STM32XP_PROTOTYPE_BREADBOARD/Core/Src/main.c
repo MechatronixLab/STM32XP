@@ -103,6 +103,7 @@ int main(void)
   MX_USB_OTG_FS_USB_Init();
   MX_USART1_UART_Init();
   MX_TIM5_Init();
+  MX_TIM10_Init();
   /* USER CODE BEGIN 2 */
 
   APP_Init();

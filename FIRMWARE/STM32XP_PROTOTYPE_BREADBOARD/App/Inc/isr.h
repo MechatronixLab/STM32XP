@@ -10,11 +10,14 @@
 
 #include "main.h"
 
+#include "buttons.h"
 #include "cli.h"
 
 extern TIM_HandleTypeDef htim5;
+extern TIM_HandleTypeDef htim10;
 
 #define ISR_INTERRUPT_TIMER_HANDLE	htim5
+#define ISR_DEBOUNCE_TIMER_HANDLER  htim10
 
 ////#define TIM16_SAMPLE_RATE	30					// Hz
 //
@@ -27,7 +30,7 @@ extern TIM_HandleTypeDef htim5;
 #define ISR_BUTTON_LEFT		0x08
 #define ISR_BUTTON_RIGHT	0x10
 
-extern uint8_t	ISR_interrupt_flag;
+extern uint8_t ISR_interrupt_flag;
 extern uint8_t ISR_button;
 
 void ISR_StartInterruptTimer(void);
