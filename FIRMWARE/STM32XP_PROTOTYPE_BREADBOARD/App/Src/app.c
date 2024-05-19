@@ -11,7 +11,7 @@ void APP_Init(void)
 {
 	CONSOLE_Init();
 
-	VERSION_Print();
+	VERSION_Get();
 
 	DISPLAY_Init();
 

@@ -23,6 +23,13 @@
 extern char * build_date;
 extern char * build_time;
 
-void VERSION_Print(void);
+extern uint16_t version_year;
+extern uint8_t  version_month;
+extern uint8_t  version_day;
+extern uint8_t  version_hour;
+extern uint8_t  version_minute;
+extern uint8_t  version_second;
+
+void VERSION_Get(void);
 
 #endif /* INC_VERSION_H_ */

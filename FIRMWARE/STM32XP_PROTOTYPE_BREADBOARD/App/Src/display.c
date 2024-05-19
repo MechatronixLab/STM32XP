@@ -119,7 +119,7 @@ void DISPLAY_Init(void)
 	OLED_SetCursor(64, 1);
 	GFX_DrawString((uint8_t *)GFX_font_5x7, display_buffer); // Version
 
-	sprintf(display_buffer, "%4d.%02d.%02d  ", V_YEAR, V_MONTH, V_DAY);
+	sprintf(display_buffer, "%4d.%02d.%02d  ", version_year, version_month, version_day);
 	OLED_SetCursor(64, 2);
 	GFX_DrawString((uint8_t *)GFX_font_5x7, display_buffer);
 

@@ -12,21 +12,21 @@ char * build_time = __TIME__;
 uint32_t build_code_date;
 uint32_t build_code_time;
 
-void VERSION_Print(void)
+uint16_t version_year   = 0;
+uint8_t  version_month  = 0;
+uint8_t  version_day    = 0;
+uint8_t  version_hour   = 0;
+uint8_t  version_minute = 0;
+uint8_t  version_second = 0;
+
+void VERSION_Get(void)
 {
 	char aux[20]      = {0};
 	char aux_month[4] = {0};
 
-	uint16_t year   = 0;
-	uint8_t  month  = 0;
-	uint8_t  day    = 0;
-	uint8_t  hour   = 0;
-	uint8_t  minute = 0;
-	uint8_t  second = 0;
-
 	strncpy(aux, build_date + 7, 4);
 
-	year = (uint16_t)(((uint8_t)(aux[0]) - '0') * 1000
+	version_year = (uint16_t)(((uint8_t)(aux[0]) - '0') * 1000
 					+ ((uint8_t)(aux[1]) - '0') *  100
 					+ ((uint8_t)(aux[2]) - '0') *   10
 					+ ((uint8_t)(aux[3]) - '0'));
@@ -36,78 +36,78 @@ void VERSION_Print(void)
 
 	if 		(strcmp(aux_month, "Jan") == 0)
 	{
-		month =  1;
+		version_month =  1;
 	}
 	else if (strcmp(aux_month, "Feb") == 0)
 	{
-		month =  2;
+		version_month =  2;
 	}
 	else if (strcmp(aux_month, "Mar") == 0)
 	{
-		month =  3;
+		version_month =  3;
 	}
 	else if (strcmp(aux_month, "Apr") == 0)
 	{
-		month =  4;
+		version_month =  4;
 	}
 	else if (strcmp(aux_month, "May") == 0)
 	{
-		month =  5;
+		version_month =  5;
 	}
 	else if (strcmp(aux_month, "Jun") == 0)
 	{
-		month =  6;
+		version_month =  6;
 	}
 	else if (strcmp(aux_month, "Jul") == 0)
 	{
-		month =  7;
+		version_month =  7;
 	}
 	else if (strcmp(aux_month, "Aug") == 0)
 	{
-		month =  8;
+		version_month =  8;
 	}
 	else if (strcmp(aux_month, "Sep") == 0)
 	{
-		month =  9;
+		version_month =  9;
 	}
 	else if (strcmp(aux_month, "Oct") == 0)
 	{
-		month = 10;
+		version_month = 10;
 	}
 	else if (strcmp(aux_month, "Nov") == 0)
 	{
-		month = 11;
+		version_month = 11;
 	}
 	else if (strcmp(aux_month, "Dec") == 0)
 	{
-		month = 12;
+		version_month = 12;
 	}
 	else
 	{
-		month = 99;
+		version_month = 99;
 	}
 
 	strncpy(aux, build_date + 4, 2);
 
-	day = (uint16_t)(((uint8_t)(aux[0]) - '0') * 10 + ((uint8_t)(aux[1]) - '0'));
+	version_day = (uint16_t)(((uint8_t)(aux[0]) - '0') * 10 + ((uint8_t)(aux[1]) - '0'));
 
 	strncpy(aux, build_time, strlen(build_time));
 
-	hour   = (uint16_t)(((uint8_t)(aux[0]) - '0') * 10 + ((uint8_t)(aux[1]) - '0'));
-	minute = (uint16_t)(((uint8_t)(aux[3]) - '0') * 10 + ((uint8_t)(aux[4]) - '0'));
-	second = (uint16_t)(((uint8_t)(aux[6]) - '0') * 10 + ((uint8_t)(aux[7]) - '0'));
+	version_hour   = (uint16_t)(((uint8_t)(aux[0]) - '0') * 10 + ((uint8_t)(aux[1]) - '0'));
+	version_minute = (uint16_t)(((uint8_t)(aux[3]) - '0') * 10 + ((uint8_t)(aux[4]) - '0'));
+	version_second = (uint16_t)(((uint8_t)(aux[6]) - '0') * 10 + ((uint8_t)(aux[7]) - '0'));
 
-	build_code_date = (uint32_t)(year   * 10000
-			              	   + month  *   100
-							   + day           );
+	build_code_date = (uint32_t)(version_year   * 10000
+			              	   + version_month  *   100
+							   + version_day           );
 
-	build_code_time = (uint32_t)(hour   * 10000
-							   + minute *   100
-							   + second        );
+	build_code_time = (uint32_t)(version_hour   * 10000
+							   + version_minute *   100
+							   + version_second        );
 
 	CLI_Print("Build Code: %lu%lu \r\n", build_code_date, build_code_time);
 
-	CLI_Write("Date: ");
+	CLI_Write("Build Date: ");
 	CLI_Write(build_date);
 	CLI_Write(" ; Time: ");
 	CLI_Write(build_time);
