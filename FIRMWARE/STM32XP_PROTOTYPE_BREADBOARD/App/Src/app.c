@@ -14,6 +14,9 @@ void APP_Init(void)
 
 	SDCARD_Test();
 
+	ADS_Test();
+	ADS_Init();
+
 	BUZZER_SetVolume(1);
 	RGB_On();
 
@@ -24,12 +27,19 @@ void APP_Init(void)
 
 void APP_Run(void)
 {
+	int16_t adc_reading = 0;
+	int32_t adc_voltage = 0;
+
 	while (1)
 	{
 		if (ISR_interrupt_flag)
 		{
 			ISR_interrupt_flag = 0;
 			HAL_GPIO_TogglePin(LED_USER_GPIO_Port, LED_USER_Pin);
+
+			adc_reading = ADS_GetConversion();
+			adc_voltage = (adc_reading * 4096) / 32767;
+			CLI_Print("ADS1115[0] = 0x%4x ; %4d mV. \r\n", adc_reading, adc_voltage);
 		}
 
 		if (BUTTONS_debounced_press)

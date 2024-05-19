@@ -18,7 +18,7 @@ void CLI_NewLine(void)
 	CLI_Write("\r\n");
 }
 
-void CLI_printf(const char *fmt, ...)
+void CLI_Print(const char *fmt, ...)
 {
 	static char buffer[256];
 	va_list args;

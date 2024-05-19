@@ -9,12 +9,11 @@
 #define INC_SDCARD_H_
 
 #include "main.h"
+#include "spi.h"
 
 #include "cli.h"
 
 #include "user_diskio_spi.h"
-
-extern SPI_HandleTypeDef hspi2;
 
 #define SD_SPI_HANDLE hspi2
 

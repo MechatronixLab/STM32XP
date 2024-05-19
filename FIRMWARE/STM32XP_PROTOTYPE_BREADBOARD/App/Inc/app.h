@@ -10,6 +10,7 @@
 
 #include "main.h"
 
+#include "ads1115.h"
 #include "buzzer.h"
 #include "console.h"
 #include "display.h"

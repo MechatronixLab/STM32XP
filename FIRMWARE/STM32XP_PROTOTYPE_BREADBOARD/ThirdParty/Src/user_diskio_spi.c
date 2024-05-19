@@ -27,7 +27,7 @@
 //#include "stm32f3xx_hal.h" /* Provide the low-level HAL functions */
 #include "user_diskio_spi.h"
 
-#include "sdcard.h"	// Added by Eng. André Araújo
+#include "sdcard.h"	// Added by Eng. André Araújo, Mechatronix Lab
 
 //Make sure you set #define SD_SPI_HANDLE as some hspix in main.h
 //Make sure you set #define SD_CS_GPIO_Port as some GPIO port in main.h

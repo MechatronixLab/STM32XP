@@ -21,6 +21,6 @@ extern UART_HandleTypeDef 	huart1;
 void CLI_Write(char * buffer);
 void CLI_NewLine(void);
 
-void CLI_printf(const char *fmt, ...);	//
+void CLI_Print(const char *fmt, ...);	// Equivalent to printf(), but prints to serial port
 
 #endif /* INC_CLI_H_ */

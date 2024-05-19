@@ -9,12 +9,10 @@
 #define INC_ISR_H_
 
 #include "main.h"
+#include "tim.h"
 
 #include "buttons.h"
 #include "cli.h"
-
-extern TIM_HandleTypeDef htim5;
-extern TIM_HandleTypeDef htim10;
 
 #define ISR_INTERRUPT_TIMER_HANDLE	htim5
 #define ISR_DEBOUNCE_TIMER_HANDLER  htim10
