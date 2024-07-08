@@ -580,9 +580,26 @@
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "I2C",
-        "pcb_color": "rgb(63, 127, 255)",
+        "name": "I2C 3.3V",
+        "pcb_color": "rgb(62, 127, 255)",
         "schematic_color": "rgb(63, 127, 255)",
+        "track_width": 0.2,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "I2C 5V",
+        "pcb_color": "rgb(50, 100, 200)",
+        "schematic_color": "rgb(50, 100, 200)",
         "track_width": 0.2,
         "via_diameter": 0.6,
         "via_drill": 0.3,
@@ -680,8 +697,8 @@
         "pattern": "GND"
       },
       {
-        "netclass": "I2C",
-        "pattern": "I2C*"
+        "netclass": "I2C 3.3V",
+        "pattern": "I2C*3*"
       },
       {
         "netclass": "+5V",
@@ -714,6 +731,10 @@
       {
         "netclass": "+V9",
         "pattern": "+9V"
+      },
+      {
+        "netclass": "I2C 5V",
+        "pattern": "I2C*5*"
       }
     ]
   },
@@ -833,6 +854,30 @@
     [
       "1f1b32b0-2877-4942-afdb-ad5dc4634e8b",
       "Root"
+    ],
+    [
+      "c5d90769-1771-42f2-86df-749a2f175e63",
+      "POWER"
+    ],
+    [
+      "f17fb096-3b39-4a0e-96ae-7df73a2ffb98",
+      "ANALOG"
+    ],
+    [
+      "f228163b-b634-4755-ba71-ac87e0adbab4",
+      "INTERFACE"
+    ],
+    [
+      "9b01c2f9-465b-4787-acfa-c3351aa61c9e",
+      "IO"
+    ],
+    [
+      "707bc64d-8f65-4ab4-b60e-143beea61902",
+      "MCU"
+    ],
+    [
+      "bef46fe4-f148-46cb-bf98-b37b01effa06",
+      "MECHANICAL"
     ]
   ],
   "text_variables": {}
