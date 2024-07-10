@@ -23,7 +23,7 @@
 		(uuid "9afdaa54-0e65-4ccd-9012-11b99490423b")
 	)
 	(sheet
-		(at 64.77 22.86)
+		(at 124.46 38.1)
 		(size 25.4 30.48)
 		(fields_autoplaced yes)
 		(stroke
@@ -35,7 +35,7 @@
 		)
 		(uuid "707bc64d-8f65-4ab4-b60e-143beea61902")
 		(property "Sheetname" "MCU"
-			(at 64.77 22.1484 0)
+			(at 124.46 37.3884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -44,7 +44,7 @@
 			)
 		)
 		(property "Sheetfile" "MCU.kicad_sch"
-			(at 64.77 53.9246 0)
+			(at 124.46 69.1646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -137,7 +137,7 @@
 		)
 	)
 	(sheet
-		(at 22.86 22.86)
+		(at 76.2 41.91)
 		(size 22.86 24.13)
 		(fields_autoplaced yes)
 		(stroke
@@ -149,7 +149,7 @@
 		)
 		(uuid "c5d90769-1771-42f2-86df-749a2f175e63")
 		(property "Sheetname" "POWER"
-			(at 22.86 22.1484 0)
+			(at 76.2 41.1984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -158,7 +158,7 @@
 			)
 		)
 		(property "Sheetfile" "POWER.kicad_sch"
-			(at 22.86 47.5746 0)
+			(at 76.2 66.6246 0)
 			(effects
 				(font
 					(size 1.27 1.27)

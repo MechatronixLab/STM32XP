@@ -4,6 +4,13 @@
 	(generator_version "8.0")
 	(uuid "c13e3513-e8a6-469f-9643-7ed7c68d3df9")
 	(paper "A4")
+	(title_block
+		(title "STM32 EXPLORER BOARD")
+		(date "2024-04-26")
+		(rev "00")
+		(company "Mechatronix Lab")
+		(comment 1 "Eng. André A. M. Araújo")
+	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:LM324"
 			(pin_names
@@ -4135,7 +4142,8 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 139.7 127 180)
+		(at 139.7 127 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4143,7 +4151,7 @@
 		(dnp no)
 		(uuid "22189146-8e30-4036-806a-5ac3b1c6af70")
 		(property "Reference" "C24"
-			(at 137.16 128.27 90)
+			(at 142.24 128.27 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4152,7 +4160,7 @@
 			)
 		)
 		(property "Value" "100nF 50V"
-			(at 142.24 132.08 90)
+			(at 137.16 132.08 90)
 			(effects
 				(font
 					(size 1.27 1.27)

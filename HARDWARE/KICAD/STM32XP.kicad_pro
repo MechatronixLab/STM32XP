@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 1.0,
+          "height": 1.7,
+          "width": 1.7
         },
         "silk_line_width": 0.09999999999999999,
         "silk_text_italic": false,
@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.09999999999999999,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.19999999999999998
         }
       },
       "diff_pair_dimensions": [],
@@ -62,7 +62,7 @@
         "connection_width": "warning",
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
-        "courtyards_overlap": "error",
+        "courtyards_overlap": "warning",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
@@ -78,7 +78,7 @@
         "item_on_disabled_layer": "error",
         "items_not_allowed": "error",
         "length_out_of_range": "error",
-        "lib_footprint_issues": "warning",
+        "lib_footprint_issues": "ignore",
         "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
@@ -89,7 +89,7 @@
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
+        "silk_edge_clearance": "ignore",
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
@@ -464,7 +464,7 @@
         "name": "+3.3V",
         "pcb_color": "rgb(255, 153, 0)",
         "schematic_color": "rgb(255, 153, 0)",
-        "track_width": 0.2,
+        "track_width": 0.4,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
@@ -481,7 +481,7 @@
         "name": "+3.3VA",
         "pcb_color": "rgb(221, 133, 0)",
         "schematic_color": "rgb(221, 133, 0)",
-        "track_width": 0.2,
+        "track_width": 0.4,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
@@ -498,7 +498,7 @@
         "name": "+3VBAT",
         "pcb_color": "rgb(204, 102, 0)",
         "schematic_color": "rgb(204, 102, 0)",
-        "track_width": 0.2,
+        "track_width": 0.4,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
@@ -515,7 +515,7 @@
         "name": "+5V",
         "pcb_color": "rgb(255, 0, 0)",
         "schematic_color": "rgb(255, 0, 0)",
-        "track_width": 0.2,
+        "track_width": 0.4,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
@@ -532,7 +532,7 @@
         "name": "+5VA",
         "pcb_color": "rgb(194, 0, 0)",
         "schematic_color": "rgb(194, 0, 0)",
-        "track_width": 0.2,
+        "track_width": 0.4,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
@@ -547,8 +547,42 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "+V9",
+        "pcb_color": "rgb(194, 0, 194)",
+        "schematic_color": "rgb(194, 0, 194)",
+        "track_width": 0.4,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "+VBUS",
         "pcb_color": "rgb(132, 0, 132)",
         "schematic_color": "rgb(132, 0, 132)",
+        "track_width": 0.4,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "+VEXT",
+        "pcb_color": "rgb(72, 0, 72)",
+        "schematic_color": "rgb(72, 0, 72)",
         "track_width": 0.2,
         "via_diameter": 0.6,
         "via_drill": 0.3,
@@ -557,6 +591,23 @@
       {
         "bus_width": 12,
         "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "+VSEL",
+        "pcb_color": "rgb(72, 0, 0)",
+        "schematic_color": "rgb(72, 0, 0)",
+        "track_width": 0.2,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -581,7 +632,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "I2C 3.3V",
-        "pcb_color": "rgb(62, 127, 255)",
+        "pcb_color": "rgb(63, 127, 255)",
         "schematic_color": "rgb(63, 127, 255)",
         "track_width": 0.2,
         "via_diameter": 0.6,
@@ -615,7 +666,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "SPI",
-        "pcb_color": "rgb(63, 63, 127)",
+        "pcb_color": "rgb(62, 93, 127)",
         "schematic_color": "rgb(63, 92, 127)",
         "track_width": 0.2,
         "via_diameter": 0.6,
@@ -632,7 +683,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "SWD",
-        "pcb_color": "rgb(63, 63, 0)",
+        "pcb_color": "rgb(128, 77, 0)",
         "schematic_color": "rgb(63, 63, 0)",
         "track_width": 0.2,
         "via_diameter": 0.6,
@@ -648,25 +699,8 @@
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "VBUS",
-        "pcb_color": "rgb(72, 0, 72)",
-        "schematic_color": "rgb(72, 0, 72)",
-        "track_width": 0.2,
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
         "name": "VCORE",
-        "pcb_color": "rgb(192, 128, 255)",
+        "pcb_color": "rgb(92, 128, 255)",
         "schematic_color": "rgb(192, 128, 255)",
         "track_width": 0.2,
         "via_diameter": 0.6,
@@ -709,8 +743,8 @@
         "pattern": "VCORE"
       },
       {
-        "netclass": "VBUS",
-        "pattern": "VBUS"
+        "netclass": "+VBUS",
+        "pattern": "+VBUS"
       },
       {
         "netclass": "SPI",
@@ -735,6 +769,14 @@
       {
         "netclass": "I2C 5V",
         "pattern": "I2C*5*"
+      },
+      {
+        "netclass": "+VEXT",
+        "pattern": "+VEXT"
+      },
+      {
+        "netclass": "+VSEL",
+        "pattern": "+VSEL"
       }
     ]
   },
