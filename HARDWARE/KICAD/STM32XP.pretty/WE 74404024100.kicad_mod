@@ -1,0 +1,129 @@
+(footprint "WE 74404024100"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "SEMI SHIELDED POWER INDUCTOR WE WÜRTH ELEKTRONIK WE-LQS")
+	(tags "SEMI SHIELDED POWER INDUCTOR WE WÜRTH ELEKTRONIK WE-LQS")
+	(property "Reference" "REF**"
+		(at 0 -2.4 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "8742589e-5636-48e1-93ed-f92e065eb693")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "10uH 0.65A 0.8A 0.43R 30MHz"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "0cd319c6-b8dc-4620-84c5-7c0c53a72924")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "WE-LQS"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cf3ee084-3e74-4e0c-8197-cbace9213714")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.we-online.com/components/products/datasheet/74404024100.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "73ec8ad0-2025-4f79-ada4-989ade4f7663")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "SEMI SHIELDED POWER INDUCTOR WE WÜRTH ELEKTRONIK WE-LQS"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "572d696a-df39-43bf-9466-ead2027644f3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -1.6 -1.1)
+		(end 1.6 1.1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "c28e8f2b-bf70-4892-8a35-07cb8e9600b5")
+	)
+	(fp_rect
+		(start -1.7 -1.2)
+		(end 1.7 1.2)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "ea0fd0de-8c32-42a9-a754-dd58ba5c3dc8")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "fbfaafbe-baab-406e-8c12-2b503497d62c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.95 0)
+		(size 1.1 2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "0043ee4b-e6dc-4012-9b79-987b2c29183d")
+	)
+	(pad "2" smd rect
+		(at 0.95 0)
+		(size 1.1 2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "584c775a-f2b6-4835-a084-db4a7d9b675c")
+	)
+	(model "${KIPRJMOD}/3D/WE-LQS_252012 (rev1).igs"
+		(offset
+			(xyz 0 0 0.6)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
