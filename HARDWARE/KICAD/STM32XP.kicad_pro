@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 0.95,
-          "width": 1.075
+          "height": 0.5,
+          "width": 1.0
         },
         "silk_line_width": 0.09999999999999999,
         "silk_text_italic": false,
@@ -583,7 +583,7 @@
         "name": "+VEXT",
         "pcb_color": "rgb(72, 0, 72)",
         "schematic_color": "rgb(72, 0, 72)",
-        "track_width": 0.2,
+        "track_width": 0.4,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
@@ -600,7 +600,7 @@
         "name": "+VSEL",
         "pcb_color": "rgb(72, 0, 0)",
         "schematic_color": "rgb(72, 0, 0)",
-        "track_width": 0.2,
+        "track_width": 0.4,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6

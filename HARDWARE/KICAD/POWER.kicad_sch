@@ -2622,7 +2622,7 @@
 		(uuid "12394558-1ae7-48c0-9e3d-ffa150be44ed")
 	)
 	(junction
-		(at 190.5 71.12)
+		(at 190.5 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "21a84cc6-18cf-4ebc-ad65-b6ca30573ba1")
@@ -2656,6 +2656,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "455bc882-8c1b-4a72-83cd-f011ea269ea1")
+	)
+	(junction
+		(at 190.5 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4cf2b158-0321-4c6a-a1db-2693eedf9207")
 	)
 	(junction
 		(at 114.3 134.62)
@@ -2704,12 +2710,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "90c1b60e-671d-4be9-9597-870a700a34ec")
-	)
-	(junction
-		(at 190.5 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "90c8dd60-4be6-4260-8276-3e2c2d14e4e0")
 	)
 	(junction
 		(at 101.6 73.66)
@@ -3137,7 +3137,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 71.12) (xy 193.04 71.12)
+			(xy 190.5 66.04) (xy 193.04 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3337,6 +3337,16 @@
 	)
 	(wire
 		(pts
+			(xy 190.5 66.04) (xy 190.5 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72b97177-aaed-455c-acf7-6cabf783af66")
+	)
+	(wire
+		(pts
 			(xy 35.56 104.14) (xy 38.1 104.14)
 		)
 		(stroke
@@ -3344,16 +3354,6 @@
 			(type default)
 		)
 		(uuid "72cef05a-3ba5-4d66-a31d-b3a87c8b0501")
-	)
-	(wire
-		(pts
-			(xy 190.5 71.12) (xy 190.5 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "79ffca64-a65e-4ea4-8eea-72854c55b6a8")
 	)
 	(wire
 		(pts
@@ -3444,16 +3444,6 @@
 			(type default)
 		)
 		(uuid "8d187095-da8d-43cb-93ae-c51ffef71c6d")
-	)
-	(wire
-		(pts
-			(xy 190.5 73.66) (xy 190.5 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f38a932-b73f-4daa-9c23-ebeaae85452e")
 	)
 	(wire
 		(pts
@@ -3817,7 +3807,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 73.66) (xy 187.96 73.66)
+			(xy 187.96 73.66) (xy 190.5 73.66)
 		)
 		(stroke
 			(width 0)
@@ -3827,7 +3817,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 68.58) (xy 190.5 71.12)
+			(xy 190.5 63.5) (xy 190.5 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3887,6 +3877,16 @@
 	)
 	(wire
 		(pts
+			(xy 190.5 73.66) (xy 190.5 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fccc2d45-a1ab-49f7-84ac-e35b1def0197")
+	)
+	(wire
+		(pts
 			(xy 76.2 40.64) (xy 76.2 73.66)
 		)
 		(stroke
@@ -3894,16 +3894,6 @@
 			(type default)
 		)
 		(uuid "fe270064-04b8-47fd-958f-a1eaa432d273")
-	)
-	(text "WE 74404024100\nhttps://www.we-online.com/components/products/datasheet/74404024100.pdf"
-		(exclude_from_sim no)
-		(at 152.4 62.23 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "2d209689-6aa3-440d-89be-aa520ceb7f9c")
 	)
 	(text "VOUT = 1.25 * (R42/R43)\nhttps://jansson.us/resistors.html"
 		(exclude_from_sim no)
@@ -4979,7 +4969,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 193.04 71.12 270)
+		(at 193.04 66.04 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4988,7 +4978,7 @@
 		(fields_autoplaced yes)
 		(uuid "3c7fb20d-0f87-4907-bc81-557e71a6312a")
 		(property "Reference" "TP3"
-			(at 198.12 69.8499 90)
+			(at 198.12 64.7699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4997,7 +4987,7 @@
 			)
 		)
 		(property "Value" "+9V"
-			(at 198.12 72.3899 90)
+			(at 198.12 67.3099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5006,7 +4996,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature"
-			(at 193.04 76.2 0)
+			(at 193.04 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5015,7 +5005,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 193.04 76.2 0)
+			(at 193.04 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5024,7 +5014,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 193.04 71.12 0)
+			(at 193.04 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7947,7 +7937,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 190.5 68.58 0)
+		(at 190.5 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7955,7 +7945,7 @@
 		(dnp no)
 		(uuid "debb31bf-b19c-40b4-beb4-95c5d9537bb9")
 		(property "Reference" "#PWR079"
-			(at 190.5 72.39 0)
+			(at 190.5 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7964,7 +7954,7 @@
 			)
 		)
 		(property "Value" "+9V"
-			(at 190.5 64.77 0)
+			(at 190.5 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7972,7 +7962,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 190.5 68.58 0)
+			(at 190.5 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7981,7 +7971,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 68.58 0)
+			(at 190.5 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7990,7 +7980,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 190.5 68.58 0)
+			(at 190.5 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
