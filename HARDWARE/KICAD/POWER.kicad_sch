@@ -3969,7 +3969,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "037f2c59-9842-4e84-b5bd-cc5f62d6262e")
-		(property "Reference" "C36"
+		(property "Reference" "C15"
 			(at 238.76 129.54 90)
 			(effects
 				(font
@@ -4023,7 +4023,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "C36")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -4106,7 +4106,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0c6a56f8-123c-4aae-ae9d-91f0d651c86b")
-		(property "Reference" "TP6"
+		(property "Reference" "TP2"
 			(at 45.72 130.8099 90)
 			(effects
 				(font
@@ -4157,7 +4157,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "TP6")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -4237,7 +4237,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "10c9d4f5-62b6-461c-a0f2-471e0cab42fb")
-		(property "Reference" "R47"
+		(property "Reference" "R9"
 			(at 137.16 140.97 90)
 			(effects
 				(font
@@ -4289,7 +4289,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "R47")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -4436,7 +4436,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "23224901-080b-42c8-8193-84080090341b")
-		(property "Reference" "C38"
+		(property "Reference" "C9"
 			(at 99.06 129.54 90)
 			(effects
 				(font
@@ -4490,7 +4490,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "C38")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -4505,7 +4505,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "23b11357-c60d-4141-9b18-ea91439c93c7")
-		(property "Reference" "D6"
+		(property "Reference" "D1"
 			(at 185.42 78.74 90)
 			(effects
 				(font
@@ -4559,7 +4559,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "D6")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -4574,7 +4574,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "25c989ac-7663-4077-a1ac-77407b2ad0f2")
-		(property "Reference" "D9"
+		(property "Reference" "D7"
 			(at 58.42 40.64 90)
 			(effects
 				(font
@@ -4628,7 +4628,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "D9")
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -4843,7 +4843,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "38405570-450d-430b-b0f1-12d484dbded9")
-		(property "Reference" "TP9"
+		(property "Reference" "TP1"
 			(at 45.72 107.9499 90)
 			(effects
 				(font
@@ -4894,7 +4894,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "TP9")
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -4910,7 +4910,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b893eee-8e8b-401a-9d7f-e15adfdde3c1")
-		(property "Reference" "TP10"
+		(property "Reference" "TP6"
 			(at 248.92 133.3499 90)
 			(effects
 				(font
@@ -4961,7 +4961,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "TP10")
+					(reference "TP6")
 					(unit 1)
 				)
 			)
@@ -4977,7 +4977,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c7fb20d-0f87-4907-bc81-557e71a6312a")
-		(property "Reference" "TP3"
+		(property "Reference" "TP5"
 			(at 198.12 64.7699 90)
 			(effects
 				(font
@@ -5028,7 +5028,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "TP3")
+					(reference "TP5")
 					(unit 1)
 				)
 			)
@@ -5043,7 +5043,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4038f797-f0eb-4de7-964a-5e3e4da8f9a1")
-		(property "Reference" "C12"
+		(property "Reference" "C8"
 			(at 124.46 129.54 90)
 			(effects
 				(font
@@ -5097,7 +5097,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "C12")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -5112,7 +5112,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "42102a46-6f78-4e62-8f8b-2592e077d25b")
-		(property "Reference" "D7"
+		(property "Reference" "D4"
 			(at 134.62 127 90)
 			(effects
 				(font
@@ -5166,7 +5166,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "D7")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -5181,7 +5181,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4217c923-c3a6-48a7-a7f9-18e6108f0e58")
-		(property "Reference" "L3"
+		(property "Reference" "L1"
 			(at 139.7 71.12 90)
 			(effects
 				(font
@@ -5233,7 +5233,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "L3")
+					(reference "L1")
 					(unit 1)
 				)
 			)
@@ -5313,7 +5313,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5701ebe8-e0f2-4c61-a878-05f6d260beb8")
-		(property "Reference" "C34"
+		(property "Reference" "C5"
 			(at 111.76 87.63 90)
 			(effects
 				(font
@@ -5367,7 +5367,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "C34")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -5449,7 +5449,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5b08b8ba-80c4-4424-b2bd-88bec31c5cde")
-		(property "Reference" "R42"
+		(property "Reference" "R3"
 			(at 162.56 80.01 90)
 			(effects
 				(font
@@ -5501,7 +5501,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "R42")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -5581,7 +5581,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "60358f73-0b85-466e-92c0-e8efb98a763e")
-		(property "Reference" "R45"
+		(property "Reference" "R28"
 			(at 86.36 54.61 90)
 			(effects
 				(font
@@ -5633,7 +5633,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "R45")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -5649,7 +5649,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "63af9134-731f-4ca2-96ce-d703d09b069e")
-		(property "Reference" "TP4"
+		(property "Reference" "TP7"
 			(at 109.22 64.7699 90)
 			(effects
 				(font
@@ -5700,7 +5700,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "TP4")
+					(reference "TP7")
 					(unit 1)
 				)
 			)
@@ -5986,7 +5986,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "715fc228-b9ef-4544-a086-932c1f1889c5")
-		(property "Reference" "C37"
+		(property "Reference" "C7"
 			(at 187.96 129.54 90)
 			(effects
 				(font
@@ -6040,7 +6040,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "C37")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -6055,7 +6055,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "745bfe96-a433-4f2d-b19a-f598ab2380ff")
-		(property "Reference" "D5"
+		(property "Reference" "D9"
 			(at 83.82 40.64 90)
 			(effects
 				(font
@@ -6109,7 +6109,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "D5")
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -6125,7 +6125,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "76e5a36f-3bbd-485a-944c-2f9f3866d01a")
-		(property "Reference" "TP2"
+		(property "Reference" "TP10"
 			(at 248.92 118.1099 90)
 			(effects
 				(font
@@ -6176,7 +6176,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "TP2")
+					(reference "TP10")
 					(unit 1)
 				)
 			)
@@ -6191,7 +6191,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7a3d50f8-35c1-4fcb-8bf9-6f9e10b58a03")
-		(property "Reference" "C31"
+		(property "Reference" "C6"
 			(at 213.36 129.54 90)
 			(effects
 				(font
@@ -6245,7 +6245,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "C31")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -6596,7 +6596,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "96e62eba-560d-4678-93c8-9aa978b1649b")
-		(property "Reference" "D4"
+		(property "Reference" "D6"
 			(at 76.2 33.02 0)
 			(effects
 				(font
@@ -6652,7 +6652,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "D4")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -6800,7 +6800,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9920522e-816c-4235-9d6e-94b78d8dcac3")
-		(property "Reference" "J5"
+		(property "Reference" "J2"
 			(at 27.94 92.71 0)
 			(effects
 				(font
@@ -6855,7 +6855,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "J5")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -6870,7 +6870,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "99e813c0-3419-4932-8c9a-08855f3f54d8")
-		(property "Reference" "R46"
+		(property "Reference" "R1"
 			(at 187.96 92.71 90)
 			(effects
 				(font
@@ -6922,7 +6922,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "R46")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -7002,7 +7002,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9e4cc594-a556-477a-81c0-27de24ccd2eb")
-		(property "Reference" "R48"
+		(property "Reference" "R8"
 			(at 226.06 140.97 90)
 			(effects
 				(font
@@ -7054,7 +7054,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "R48")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -7070,7 +7070,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a5e447b2-4a64-46d1-a9ca-6d21a43642ff")
-		(property "Reference" "U4"
+		(property "Reference" "U2"
 			(at 114.3 115.57 0)
 			(effects
 				(font
@@ -7125,7 +7125,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "U4")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -7141,7 +7141,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a6a8bcb1-137c-4425-bb11-139b71da528f")
-		(property "Reference" "TP8"
+		(property "Reference" "TP9"
 			(at 96.52 29.2099 90)
 			(effects
 				(font
@@ -7192,7 +7192,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "TP8")
+					(reference "TP9")
 					(unit 1)
 				)
 			)
@@ -7207,7 +7207,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a9ca4038-c071-496b-b903-d17f83b4a79e")
-		(property "Reference" "D3"
+		(property "Reference" "D2"
 			(at 158.75 71.12 0)
 			(effects
 				(font
@@ -7259,7 +7259,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "D3")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -7274,7 +7274,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "abcd9d9d-41d0-4891-9d35-c2341d593c68")
-		(property "Reference" "C35"
+		(property "Reference" "C1"
 			(at 175.26 87.63 90)
 			(effects
 				(font
@@ -7328,7 +7328,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "C35")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -7343,7 +7343,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "af1634c1-c859-455c-ab5f-d6b2d70ad5af")
-		(property "Reference" "U7"
+		(property "Reference" "U1"
 			(at 203.2 115.57 0)
 			(effects
 				(font
@@ -7398,7 +7398,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "U7")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -7611,7 +7611,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bc4ff63e-8912-400b-b181-99953b4691b4")
-		(property "Reference" "L4"
+		(property "Reference" "L2"
 			(at 234.95 116.84 90)
 			(effects
 				(font
@@ -7663,7 +7663,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "L4")
+					(reference "L2")
 					(unit 1)
 				)
 			)
@@ -7678,7 +7678,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bf1bc0e9-3696-449f-a93b-9faae28e9287")
-		(property "Reference" "R49"
+		(property "Reference" "R24"
 			(at 60.96 54.61 90)
 			(effects
 				(font
@@ -7730,7 +7730,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "R49")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -7746,7 +7746,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c8b88a6c-0759-421c-b482-1860fb848a04")
-		(property "Reference" "TP1"
+		(property "Reference" "TP4"
 			(at 147.32 118.1099 90)
 			(effects
 				(font
@@ -7797,7 +7797,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "TP1")
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -7878,7 +7878,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd9e4583-0a18-4eac-b102-b5e600005e39")
-		(property "Reference" "TP5"
+		(property "Reference" "TP8"
 			(at 45.72 92.7099 90)
 			(effects
 				(font
@@ -7929,7 +7929,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "TP5")
+					(reference "TP8")
 					(unit 1)
 				)
 			)
@@ -8009,7 +8009,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "df45c8bf-799c-40e2-af99-e1ab79216149")
-		(property "Reference" "R43"
+		(property "Reference" "R2"
 			(at 162.56 92.71 90)
 			(effects
 				(font
@@ -8061,7 +8061,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "R43")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -8076,7 +8076,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ee3dcdc1-6d4e-4a7c-a315-cdf969c3b6d9")
-		(property "Reference" "R44"
+		(property "Reference" "R10"
 			(at 119.38 80.01 90)
 			(effects
 				(font
@@ -8128,7 +8128,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "R44")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -8211,7 +8211,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f5901dca-af5d-431a-8116-af167629070d")
-		(property "Reference" "TP7"
+		(property "Reference" "TP3"
 			(at 223.52 118.1099 90)
 			(effects
 				(font
@@ -8262,7 +8262,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "TP7")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -8344,7 +8344,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fd43efae-f628-4c38-8773-38e3c4081c6c")
-		(property "Reference" "U8"
+		(property "Reference" "U3"
 			(at 133.35 77.47 0)
 			(effects
 				(font
@@ -8407,7 +8407,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "U8")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -8422,7 +8422,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ff4ad66a-0545-43e2-9535-f4312ff1c863")
-		(property "Reference" "D8"
+		(property "Reference" "D3"
 			(at 223.52 127 90)
 			(effects
 				(font
@@ -8476,7 +8476,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
-					(reference "D8")
+					(reference "D3")
 					(unit 1)
 				)
 			)
