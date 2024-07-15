@@ -3373,6 +3373,18 @@
 		)
 	)
 	(junction
+		(at 191.77 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "11a6a506-c095-4c5a-9c87-65246adc6667")
+	)
+	(junction
+		(at 199.39 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "42a165f3-3299-45ee-92d6-8e82a7d15652")
+	)
+	(junction
 		(at 203.2 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3401,6 +3413,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "707577e3-ddf5-4cbe-8efe-947951f96ced")
+	)
+	(junction
+		(at 199.39 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "74dc27aa-732b-4145-be7e-90e82165822c")
 	)
 	(junction
 		(at 238.76 64.77)
@@ -3602,6 +3620,16 @@
 	)
 	(wire
 		(pts
+			(xy 222.25 154.94) (xy 191.77 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1455fa0e-8c5b-44f8-bf86-7146124dbd62")
+	)
+	(wire
+		(pts
 			(xy 43.18 81.28) (xy 35.56 81.28)
 		)
 		(stroke
@@ -3639,6 +3667,16 @@
 			(type default)
 		)
 		(uuid "16bf2b47-14f0-4040-afd6-17c69c93815d")
+	)
+	(wire
+		(pts
+			(xy 199.39 134.62) (xy 218.44 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a5b5b03-bf31-4086-bea6-bba4a74ae891")
 	)
 	(wire
 		(pts
@@ -3699,16 +3737,6 @@
 			(type default)
 		)
 		(uuid "1ff901ab-2d62-4311-9a9a-47aa7b0b6545")
-	)
-	(wire
-		(pts
-			(xy 165.1 134.62) (xy 218.44 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23cf8bff-4f13-4179-8ef0-9279e694ebc6")
 	)
 	(wire
 		(pts
@@ -3962,6 +3990,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 137.16) (xy 191.77 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62df5c4f-461e-4af9-b042-5685b95275b4")
+	)
+	(wire
+		(pts
 			(xy 43.18 86.36) (xy 35.56 86.36)
 		)
 		(stroke
@@ -4192,6 +4230,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 134.62) (xy 199.39 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97e04e5e-d89c-4ff3-b13e-89a149ebb02e")
+	)
+	(wire
+		(pts
 			(xy 231.14 76.2) (xy 231.14 64.77)
 		)
 		(stroke
@@ -4199,6 +4247,16 @@
 			(type default)
 		)
 		(uuid "99bfab6c-c919-4508-98d6-c42e4a6c4a61")
+	)
+	(wire
+		(pts
+			(xy 194.31 134.62) (xy 194.31 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a5ab11d-383c-4fc0-866b-82af7081116d")
 	)
 	(wire
 		(pts
@@ -4219,16 +4277,6 @@
 			(type default)
 		)
 		(uuid "a27b2a16-6462-4beb-8a9a-4d3af5ed06dd")
-	)
-	(wire
-		(pts
-			(xy 181.61 139.7) (xy 218.44 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a35a0c8c-a09f-4aa8-9731-cf3be650d808")
 	)
 	(wire
 		(pts
@@ -4312,6 +4360,16 @@
 	)
 	(wire
 		(pts
+			(xy 191.77 137.16) (xy 191.77 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bba4f4b4-06c7-4165-94fa-028326562802")
+	)
+	(wire
+		(pts
 			(xy 218.44 46.99) (xy 228.6 46.99)
 		)
 		(stroke
@@ -4329,6 +4387,26 @@
 			(type default)
 		)
 		(uuid "c0f3e7f7-e9d6-4bca-91a6-02f6cbd24dea")
+	)
+	(wire
+		(pts
+			(xy 196.85 134.62) (xy 199.39 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2d52df5-3586-4807-88b2-c247217f6287")
+	)
+	(wire
+		(pts
+			(xy 191.77 137.16) (xy 191.77 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c44162f9-c1f1-4b4a-8ba1-23b80382f1eb")
 	)
 	(wire
 		(pts
@@ -4392,6 +4470,16 @@
 	)
 	(wire
 		(pts
+			(xy 191.77 106.68) (xy 191.77 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2ebb4a7-7e33-439b-935e-14e6089d68b6")
+	)
+	(wire
+		(pts
 			(xy 43.18 104.14) (xy 35.56 104.14)
 		)
 		(stroke
@@ -4429,6 +4517,16 @@
 			(type default)
 		)
 		(uuid "d70ac855-b87c-4757-8710-f17ff436bcc6")
+	)
+	(wire
+		(pts
+			(xy 194.31 139.7) (xy 218.44 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d74c48ed-afd6-4971-98c8-04935de8fef1")
 	)
 	(wire
 		(pts
@@ -4492,7 +4590,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 139.7) (xy 173.99 139.7)
+			(xy 165.1 134.62) (xy 173.99 134.62)
 		)
 		(stroke
 			(width 0)
@@ -4509,6 +4607,26 @@
 			(type default)
 		)
 		(uuid "e6c886d4-e749-4aa6-9712-192283b63a8a")
+	)
+	(wire
+		(pts
+			(xy 191.77 101.6) (xy 199.39 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e85d376e-0998-4fd3-96cf-d173ede586ce")
+	)
+	(wire
+		(pts
+			(xy 181.61 134.62) (xy 194.31 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e94896f1-785e-4e3a-bda2-a305ddc3ae82")
 	)
 	(wire
 		(pts
@@ -4602,7 +4720,17 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 121.92) (xy 199.39 142.24)
+			(xy 196.85 132.08) (xy 196.85 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f51ba50f-571b-437f-80de-730e5cdd4561")
+	)
+	(wire
+		(pts
+			(xy 199.39 121.92) (xy 199.39 134.62)
 		)
 		(stroke
 			(width 0)
@@ -4632,6 +4760,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 132.08) (xy 196.85 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc3f6725-39c0-41df-8c32-7dec393fa11e")
+	)
+	(wire
+		(pts
 			(xy 43.18 78.74) (xy 35.56 78.74)
 		)
 		(stroke
@@ -4639,6 +4777,40 @@
 			(type default)
 		)
 		(uuid "fcc7edd8-0f66-4415-97a4-273a820237b0")
+	)
+	(text "WE 629722000214\nhttps://www.we-online.com/en/components/products/WR-COM_USB_20_TYPE_C_RECEPTACLE_HORIZONTAL_SMT#629722000214"
+		(exclude_from_sim no)
+		(at 246.38 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "37ac7558-3a87-4ad7-8d51-e71d63ddfe34")
+	)
+	(text "WE 693071020811\nhttps://www.we-online.com/en/components/products/CRD_SD_MICRO_PUSH_AND_PULL_8_PINS#693071020811"
+		(exclude_from_sim no)
+		(at 246.38 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+			(href "https://www.we-online.com/en/components/products/CRD_SD_MICRO_PUSH_AND_PULL_8_PINS#693071020811")
+		)
+		(uuid "6ccc3237-c00d-4d72-92d3-2073e0838aea")
+	)
+	(text "PIN 9 - CARD DETECTOR\n"
+		(exclude_from_sim no)
+		(at 248.92 154.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fdd190b8-b371-478c-87c9-12d64bd2a9f2")
 	)
 	(label "SD DAT2 SPI"
 		(at 208.28 124.46 0)
@@ -4873,7 +5045,7 @@
 	)
 	(global_label "SPI SCK"
 		(shape input)
-		(at 165.1 134.62 180)
+		(at 165.1 132.08 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4883,7 +5055,7 @@
 		)
 		(uuid "44c63479-5aeb-4bfa-9e59-5f525126fa6e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 154.3134 134.62 0)
+			(at 154.3134 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5445,7 +5617,7 @@
 	)
 	(global_label "SPI MISO"
 		(shape output)
-		(at 165.1 139.7 180)
+		(at 165.1 134.62 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5455,7 +5627,7 @@
 		)
 		(uuid "e0405285-3916-480d-8431-b55425e75991")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 153.4667 139.7 0)
+			(at 153.4667 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5483,6 +5655,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SD CARD ~{IN}"
+		(shape output)
+		(at 165.1 137.16 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f00d94e7-1fc0-4a87-884a-8160a0eff58c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 150.8662 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -6310,6 +6504,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 191.77 110.49 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7f6dd2be-d6be-4d32-aec3-d24605aabd38")
+		(property "Reference" "R50"
+			(at 189.23 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10K 1%"
+			(at 194.31 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 190.754 110.236 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 191.77 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 191.77 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1a1eb2fc-2f9b-4263-b55a-5923fd31ccab")
+		)
+		(pin "1"
+			(uuid "c06dea49-e629-4a50-8ab0-21ac1077cff2")
+		)
+		(instances
+			(project "STM32XP"
+				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/9b01c2f9-465b-4787-acfa-c3351aa61c9e"
+					(reference "R50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 222.25 101.6 270)
 		(unit 1)
@@ -6913,7 +7174,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 177.8 139.7 90)
+		(at 177.8 134.62 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6921,7 +7182,7 @@
 		(dnp no)
 		(uuid "b7fa9f94-e3d1-4d09-9b12-811920b9d24f")
 		(property "Reference" "R40"
-			(at 173.99 138.43 90)
+			(at 173.99 133.35 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6929,7 +7190,7 @@
 			)
 		)
 		(property "Value" "51R 1%"
-			(at 184.15 140.97 90)
+			(at 184.15 135.89 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6937,7 +7198,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 178.054 138.684 90)
+			(at 178.054 133.604 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6946,7 +7207,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 177.8 139.7 0)
+			(at 177.8 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6955,7 +7216,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 177.8 139.7 0)
+			(at 177.8 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)

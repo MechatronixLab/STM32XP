@@ -2736,6 +2736,12 @@
 		(uuid "a917dbf4-f21b-4d2f-9c93-08062f0d6ed1")
 	)
 	(junction
+		(at 241.3 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ac16d00b-cf1b-4b6d-ab03-fa49026ae087")
+	)
+	(junction
 		(at 203.2 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3267,7 +3273,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 144.78) (xy 228.6 147.32)
+			(xy 228.6 143.51) (xy 228.6 147.32)
 		)
 		(stroke
 			(width 0)
@@ -3457,6 +3463,16 @@
 	)
 	(wire
 		(pts
+			(xy 241.3 139.7) (xy 243.84 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b79943f-5439-4330-af39-3b37ad90bf00")
+	)
+	(wire
+		(pts
 			(xy 38.1 109.22) (xy 38.1 111.76)
 		)
 		(stroke
@@ -3507,7 +3523,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 132.08) (xy 228.6 137.16)
+			(xy 228.6 132.08) (xy 228.6 135.89)
 		)
 		(stroke
 			(width 0)
@@ -3707,6 +3723,16 @@
 	)
 	(wire
 		(pts
+			(xy 241.3 139.7) (xy 241.3 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca9128f4-6ad9-49f3-b94e-5b7e4794cb55")
+	)
+	(wire
+		(pts
 			(xy 129.54 81.28) (xy 127 81.28)
 		)
 		(stroke
@@ -3837,7 +3863,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 134.62) (xy 241.3 144.78)
+			(xy 241.3 134.62) (xy 241.3 139.7)
 		)
 		(stroke
 			(width 0)
@@ -3895,6 +3921,17 @@
 		)
 		(uuid "fe270064-04b8-47fd-958f-a1eaa432d273")
 	)
+	(text "WE 694106301002\nchrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.we-online.com/components/products/datasheet/694106301002.pdf\nhttps://www.we-online.com/en/components/products/DC_RIGHT_ANGLED_6_4_69410X301002\n\nCONFIRM ID 2mm OR 2.5mm"
+		(exclude_from_sim no)
+		(at 33.02 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "681c29ef-e5f6-41ac-b275-7047f14545b3")
+	)
 	(text "VOUT = 1.25 * (R42/R43)\nhttps://jansson.us/resistors.html"
 		(exclude_from_sim no)
 		(at 165.1 105.41 0)
@@ -3904,6 +3941,17 @@
 			)
 		)
 		(uuid "787f2a21-522e-45f8-aa4f-dc7e9a870490")
+	)
+	(text "WE 	79527141\nhttps://www.we-online.com/en/components/products/BCPH_BATTERY_HOLDER"
+		(exclude_from_sim no)
+		(at 41.91 146.05 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8f09f8e7-3888-42d9-a05e-c1358efe4d64")
 	)
 	(label "BOOST SW"
 		(at 146.05 73.66 0)
@@ -6995,7 +7043,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 228.6 140.97 180)
+		(at 228.6 139.7 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7003,7 +7051,7 @@
 		(dnp no)
 		(uuid "9e4cc594-a556-477a-81c0-27de24ccd2eb")
 		(property "Reference" "R8"
-			(at 226.06 140.97 90)
+			(at 226.06 139.7 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7011,7 +7059,7 @@
 			)
 		)
 		(property "Value" "1K 1%"
-			(at 231.14 140.97 90)
+			(at 231.14 139.7 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7019,7 +7067,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 227.584 140.716 90)
+			(at 227.584 139.446 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7028,7 +7076,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 228.6 140.97 0)
+			(at 228.6 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7037,7 +7085,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 228.6 140.97 0)
+			(at 228.6 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7798,6 +7846,73 @@
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
 					(reference "TP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 243.84 139.7 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ca34afff-4a87-4fc4-b9bc-d83a68aa9634")
+		(property "Reference" "TP13"
+			(at 248.92 138.4299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 248.92 140.9699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature"
+			(at 243.84 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 243.84 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 243.84 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f377a93d-255f-4edd-8658-0697ad4da89d")
+		)
+		(instances
+			(project "STM32XP"
+				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/c5d90769-1771-42f2-86df-749a2f175e63"
+					(reference "TP13")
 					(unit 1)
 				)
 			)
