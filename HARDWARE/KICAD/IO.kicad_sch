@@ -3415,12 +3415,6 @@
 		(uuid "707577e3-ddf5-4cbe-8efe-947951f96ced")
 	)
 	(junction
-		(at 199.39 134.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "74dc27aa-732b-4145-be7e-90e82165822c")
-	)
-	(junction
 		(at 238.76 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3670,7 +3664,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 134.62) (xy 218.44 134.62)
+			(xy 196.85 134.62) (xy 218.44 134.62)
 		)
 		(stroke
 			(width 0)
@@ -4160,6 +4154,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 121.92) (xy 199.39 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f970af8-2b59-4a27-b305-500d863dbcbf")
+	)
+	(wire
+		(pts
 			(xy 241.3 46.99) (xy 238.76 46.99)
 		)
 		(stroke
@@ -4227,16 +4231,6 @@
 			(type default)
 		)
 		(uuid "9642774d-cb7c-424d-b8fa-76defa218366")
-	)
-	(wire
-		(pts
-			(xy 199.39 134.62) (xy 199.39 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "97e04e5e-d89c-4ff3-b13e-89a149ebb02e")
 	)
 	(wire
 		(pts
@@ -4387,16 +4381,6 @@
 			(type default)
 		)
 		(uuid "c0f3e7f7-e9d6-4bca-91a6-02f6cbd24dea")
-	)
-	(wire
-		(pts
-			(xy 196.85 134.62) (xy 199.39 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2d52df5-3586-4807-88b2-c247217f6287")
 	)
 	(wire
 		(pts
@@ -4730,16 +4714,6 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 121.92) (xy 199.39 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f72a8c8c-6cf8-43f4-906a-6f829fd990ca")
-	)
-	(wire
-		(pts
 			(xy 165.1 127) (xy 218.44 127)
 		)
 		(stroke
@@ -4789,6 +4763,17 @@
 		)
 		(uuid "37ac7558-3a87-4ad7-8d51-e71d63ddfe34")
 	)
+	(text "WE Filter Bag USB 2.0 Type A EMC\nhttps://www.we-online.com/en/components/products/EMC_FILTER_BAGS_STICKS_USB_2_0_FILTER_BAG#744232090"
+		(exclude_from_sim no)
+		(at 179.07 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "486c4eb4-1783-4e86-b88c-ba63f076b636")
+	)
 	(text "WE 693071020811\nhttps://www.we-online.com/en/components/products/CRD_SD_MICRO_PUSH_AND_PULL_8_PINS#693071020811"
 		(exclude_from_sim no)
 		(at 246.38 109.22 0)
@@ -4800,6 +4785,17 @@
 			(href "https://www.we-online.com/en/components/products/CRD_SD_MICRO_PUSH_AND_PULL_8_PINS#693071020811")
 		)
 		(uuid "6ccc3237-c00d-4d72-92d3-2073e0838aea")
+	)
+	(text "WE 744232090\nhttps://www.we-online.com/en/components/products/WE-CNSW#/articles/WE-CNSW-1206"
+		(exclude_from_sim no)
+		(at 179.07 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f12605c1-eb4d-4ab1-8435-0abe92fdcd1a")
 	)
 	(text "PIN 9 - CARD DETECTOR\n"
 		(exclude_from_sim no)
