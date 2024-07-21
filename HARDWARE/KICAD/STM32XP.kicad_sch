@@ -5,8 +5,8 @@
 	(uuid "1f1b32b0-2877-4942-afdb-ad5dc4634e8b")
 	(paper "A4")
 	(title_block
-		(title "STM32 EXPLORER BOARD")
-		(date "2024-04-26")
+		(title "STM32 EXPLORER BOARD PROTOTYPE")
+		(date "2024-07-21")
 		(rev "00")
 		(company "Mechatronix Lab")
 		(comment 1 "Eng. André A. M. Araújo")

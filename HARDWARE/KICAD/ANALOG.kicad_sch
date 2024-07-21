@@ -5,8 +5,8 @@
 	(uuid "c13e3513-e8a6-469f-9643-7ed7c68d3df9")
 	(paper "A4")
 	(title_block
-		(title "STM32 EXPLORER BOARD")
-		(date "2024-04-26")
+		(title "STM32 EXPLORER BOARD PROTOTYPE")
+		(date "2024-07-21")
 		(rev "00")
 		(company "Mechatronix Lab")
 		(comment 1 "Eng. André A. M. Araújo")
@@ -2164,16 +2164,6 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 81.28) (xy 139.7 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02b3ba9a-15a9-4d8e-bf7e-49efe6aac225")
-	)
-	(wire
-		(pts
 			(xy 66.04 128.27) (xy 66.04 125.73)
 		)
 		(stroke
@@ -2451,6 +2441,16 @@
 			(type default)
 		)
 		(uuid "42304e38-35b9-48cf-93c5-8eb93c164a23")
+	)
+	(wire
+		(pts
+			(xy 139.7 81.28) (xy 137.16 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "456447ed-f2c3-49ff-8688-916a81bcca74")
 	)
 	(wire
 		(pts
@@ -3412,6 +3412,94 @@
 		)
 		(uuid "fd1d34c1-cf41-4d30-8de7-38941fbba42e")
 	)
+	(label "AA2FB"
+		(at 127 71.12 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.635 0.635)
+			)
+			(justify left bottom)
+		)
+		(uuid "13404c22-c1e7-4b5c-92e0-fc6334a491fc")
+	)
+	(label "AA2+"
+		(at 139.7 81.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.635 0.635)
+			)
+			(justify left bottom)
+		)
+		(uuid "14e06995-2c11-468f-bcfd-af898a920d60")
+	)
+	(label "AA3+"
+		(at 139.7 119.38 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.635 0.635)
+			)
+			(justify left bottom)
+		)
+		(uuid "4d9c46d2-0631-47b7-8d18-52e15d42badc")
+	)
+	(label "AA4+"
+		(at 139.7 157.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.635 0.635)
+			)
+			(justify left bottom)
+		)
+		(uuid "5d289fd5-4026-4f7c-9513-c3ee73689bc4")
+	)
+	(label "AA3FB"
+		(at 127 109.22 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.635 0.635)
+			)
+			(justify left bottom)
+		)
+		(uuid "84df03d4-26b1-48a2-a81b-74d05adf4e0d")
+	)
+	(label "AA1+"
+		(at 139.7 43.18 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.635 0.635)
+			)
+			(justify left bottom)
+		)
+		(uuid "8cde0f48-52b1-4811-9772-0ef641d9aa2a")
+	)
+	(label "AA4FB"
+		(at 127 147.32 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.635 0.635)
+			)
+			(justify left bottom)
+		)
+		(uuid "909a9364-d241-4fcc-897d-9b30c622359e")
+	)
+	(label "AA1FB"
+		(at 127 33.02 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.635 0.635)
+			)
+			(justify left bottom)
+		)
+		(uuid "adcd1627-fdb9-4fe0-a21e-f3fe61f2307c")
+	)
 	(global_label "I2C SDA 5V"
 		(shape bidirectional)
 		(at 243.84 104.14 0)
@@ -3909,7 +3997,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "050986d2-8e68-4498-a86f-2f40f5d58e98")
-		(property "Reference" "R25"
+		(property "Reference" "R26"
 			(at 133.35 78.74 90)
 			(effects
 				(font
@@ -3961,7 +4049,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/f17fb096-3b39-4a0e-96ae-7df73a2ffb98"
-					(reference "R25")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -4112,7 +4200,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1a18b4af-259b-4c62-8afd-aa34514433f6")
-		(property "Reference" "R37"
+		(property "Reference" "R40"
 			(at 120.65 154.94 90)
 			(effects
 				(font
@@ -4164,7 +4252,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/f17fb096-3b39-4a0e-96ae-7df73a2ffb98"
-					(reference "R37")
+					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -4249,7 +4337,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "36f03e46-cb48-4f4b-a03d-8bd99850225f")
-		(property "Reference" "R36"
+		(property "Reference" "R39"
 			(at 120.65 116.84 90)
 			(effects
 				(font
@@ -4301,7 +4389,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/f17fb096-3b39-4a0e-96ae-7df73a2ffb98"
-					(reference "R36")
+					(reference "R39")
 					(unit 1)
 				)
 			)
@@ -4623,7 +4711,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "56032d7e-881e-46d0-b5ba-73c02227311d")
-		(property "Reference" "R33"
+		(property "Reference" "R35"
 			(at 133.35 116.84 90)
 			(effects
 				(font
@@ -4675,7 +4763,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/f17fb096-3b39-4a0e-96ae-7df73a2ffb98"
-					(reference "R33")
+					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -5265,7 +5353,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "acb6b2c5-6988-412b-96ab-06159f6902cc")
-		(property "Reference" "R23"
+		(property "Reference" "R24"
 			(at 120.65 78.74 90)
 			(effects
 				(font
@@ -5317,7 +5405,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/f17fb096-3b39-4a0e-96ae-7df73a2ffb98"
-					(reference "R23")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -5791,7 +5879,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bd3dd4c8-b215-4935-805d-9452efaacd8d")
-		(property "Reference" "R26"
+		(property "Reference" "R27"
 			(at 133.35 40.64 90)
 			(effects
 				(font
@@ -5843,7 +5931,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/f17fb096-3b39-4a0e-96ae-7df73a2ffb98"
-					(reference "R26")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -5927,7 +6015,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d34d7ba1-c620-42ae-9235-fc6b6ef1a083")
-		(property "Reference" "R34"
+		(property "Reference" "R36"
 			(at 133.35 154.94 90)
 			(effects
 				(font
@@ -5979,7 +6067,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/f17fb096-3b39-4a0e-96ae-7df73a2ffb98"
-					(reference "R34")
+					(reference "R36")
 					(unit 1)
 				)
 			)
@@ -6098,7 +6186,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ddc8a13d-15ff-4916-85e9-0ba6c44263cd")
-		(property "Reference" "R24"
+		(property "Reference" "R25"
 			(at 120.65 40.64 90)
 			(effects
 				(font
@@ -6150,7 +6238,7 @@
 		(instances
 			(project "STM32XP"
 				(path "/1f1b32b0-2877-4942-afdb-ad5dc4634e8b/f17fb096-3b39-4a0e-96ae-7df73a2ffb98"
-					(reference "R24")
+					(reference "R25")
 					(unit 1)
 				)
 			)

@@ -5,8 +5,8 @@
 	(uuid "089aec9c-96d5-4ed9-9ec9-f7e7265576a0")
 	(paper "A4")
 	(title_block
-		(title "STM32 EXPLORER BOARD")
-		(date "2024-04-26")
+		(title "STM32 EXPLORER BOARD PROTOTYPE")
+		(date "2024-07-21")
 		(rev "00")
 		(company "Mechatronix Lab")
 		(comment 1 "Eng. André A. M. Araújo")
@@ -176,7 +176,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
-		(at 139.7 101.6 0)
+		(at 165.1 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -185,7 +185,7 @@
 		(fields_autoplaced yes)
 		(uuid "3c21c466-6160-4e43-bc14-3fa3ecf89790")
 		(property "Reference" "FID3"
-			(at 142.24 100.3299 0)
+			(at 167.64 100.3299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -194,7 +194,7 @@
 			)
 		)
 		(property "Value" "Fiducial"
-			(at 142.24 102.8699 0)
+			(at 167.64 102.8699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -203,7 +203,7 @@
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_0.75mm_Mask1.5mm"
-			(at 139.7 101.6 0)
+			(at 165.1 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -212,7 +212,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 139.7 101.6 0)
+			(at 165.1 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -221,7 +221,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 139.7 101.6 0)
+			(at 165.1 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -240,7 +240,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 101.6 76.2 0)
+		(at 114.3 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -249,7 +249,7 @@
 		(fields_autoplaced yes)
 		(uuid "3fbd2b27-ebe0-4d56-98cb-07cb97445d88")
 		(property "Reference" "H1"
-			(at 104.14 74.9299 0)
+			(at 116.84 74.9299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -258,7 +258,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 104.14 77.4699 0)
+			(at 116.84 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -267,7 +267,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 101.6 76.2 0)
+			(at 114.3 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -276,7 +276,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 101.6 76.2 0)
+			(at 114.3 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -285,7 +285,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 101.6 76.2 0)
+			(at 114.3 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -304,7 +304,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
-		(at 139.7 76.2 0)
+		(at 165.1 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -313,7 +313,7 @@
 		(fields_autoplaced yes)
 		(uuid "57613d86-87a2-4bf9-85ba-6f21b2a0cb8b")
 		(property "Reference" "FID1"
-			(at 142.24 74.9299 0)
+			(at 167.64 74.9299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -322,7 +322,7 @@
 			)
 		)
 		(property "Value" "Fiducial"
-			(at 142.24 77.4699 0)
+			(at 167.64 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -331,7 +331,7 @@
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_0.75mm_Mask1.5mm"
-			(at 139.7 76.2 0)
+			(at 165.1 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -340,7 +340,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 139.7 76.2 0)
+			(at 165.1 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -349,7 +349,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 139.7 76.2 0)
+			(at 165.1 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -368,7 +368,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
-		(at 139.7 88.9 0)
+		(at 165.1 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -377,7 +377,7 @@
 		(fields_autoplaced yes)
 		(uuid "87efa576-ffb4-4a43-a133-ab202b1fc94e")
 		(property "Reference" "FID2"
-			(at 142.24 87.6299 0)
+			(at 167.64 87.6299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -386,7 +386,7 @@
 			)
 		)
 		(property "Value" "Fiducial"
-			(at 142.24 90.1699 0)
+			(at 167.64 90.1699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -395,7 +395,7 @@
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_0.75mm_Mask1.5mm"
-			(at 139.7 88.9 0)
+			(at 165.1 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -404,7 +404,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 139.7 88.9 0)
+			(at 165.1 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -413,7 +413,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 139.7 88.9 0)
+			(at 165.1 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -432,7 +432,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 101.6 88.9 0)
+		(at 114.3 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -441,7 +441,7 @@
 		(fields_autoplaced yes)
 		(uuid "95b3a7c6-0423-40d3-a697-832b9bbaa1ba")
 		(property "Reference" "H2"
-			(at 104.14 87.6299 0)
+			(at 116.84 87.6299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -450,7 +450,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 104.14 90.1699 0)
+			(at 116.84 90.1699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -459,7 +459,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 101.6 88.9 0)
+			(at 114.3 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -468,7 +468,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 101.6 88.9 0)
+			(at 114.3 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -477,7 +477,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 101.6 88.9 0)
+			(at 114.3 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -496,7 +496,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 101.6 114.3 0)
+		(at 114.3 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -505,7 +505,7 @@
 		(fields_autoplaced yes)
 		(uuid "cb61c280-7722-47cf-8089-20f9ea8e9bb8")
 		(property "Reference" "H4"
-			(at 104.14 113.0299 0)
+			(at 116.84 113.0299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -514,7 +514,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 104.14 115.5699 0)
+			(at 116.84 115.5699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -523,7 +523,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 101.6 114.3 0)
+			(at 114.3 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -532,7 +532,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 101.6 114.3 0)
+			(at 114.3 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -541,7 +541,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 101.6 114.3 0)
+			(at 114.3 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -560,7 +560,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 101.6 101.6 0)
+		(at 114.3 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -569,7 +569,7 @@
 		(fields_autoplaced yes)
 		(uuid "d4436d24-cc00-49a9-88a7-7a3ab29c4d99")
 		(property "Reference" "H3"
-			(at 104.14 100.3299 0)
+			(at 116.84 100.3299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -578,7 +578,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 104.14 102.8699 0)
+			(at 116.84 102.8699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -587,7 +587,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 101.6 101.6 0)
+			(at 114.3 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -596,7 +596,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 101.6 101.6 0)
+			(at 114.3 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -605,7 +605,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 101.6 101.6 0)
+			(at 114.3 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
