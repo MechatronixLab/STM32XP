@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 1.0,
-          "height": 2.0,
-          "width": 2.0
+          "height": 1.7,
+          "width": 1.7
         },
         "silk_line_width": 0.09999999999999999,
         "silk_text_italic": false,
@@ -53,9 +53,6 @@
       },
       "diff_pair_dimensions": [],
       "drc_exclusions": [
-        "duplicate_footprints|150000000|122606000|50836e08-22fa-402e-a1e1-40652c507197|32fcb21e-3c1c-4a03-8802-de7c2edc55b9",
-        "extra_footprint|119774000|112700000|32fcb21e-3c1c-4a03-8802-de7c2edc55b9|00000000-0000-0000-0000-000000000000",
-        "extra_footprint|150000000|122606000|50836e08-22fa-402e-a1e1-40652c507197|00000000-0000-0000-0000-000000000000",
         "hole_clearance|193885000|93290000|87cac876-3c19-4b2a-9b03-35e1deade893|44bc5eea-4d78-4ac0-b1e7-e788dc01f3dc",
         "hole_clearance|193885000|93290000|87cac876-3c19-4b2a-9b03-35e1deade893|cbc78b91-ec7a-4d01-b8f4-047bafbe3820",
         "hole_clearance|193885000|93490000|87cac876-3c19-4b2a-9b03-35e1deade893|68562be4-fb24-4645-935b-f58148ba4a2b",
@@ -774,7 +771,7 @@
       },
       {
         "netclass": "+VBUS",
-        "pattern": "+VBUS"
+        "pattern": "+VBUS*"
       },
       {
         "netclass": "SPI",
@@ -811,6 +808,10 @@
       {
         "netclass": "BOOST",
         "pattern": "*BOOST*"
+      },
+      {
+        "netclass": "+VBUS",
+        "pattern": "*USB FIL*POW*"
       }
     ]
   },

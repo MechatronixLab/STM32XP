@@ -1,0 +1,193 @@
+(footprint "WE 744232090"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "WE-CNSW SMT Common Mode Line Filter Choke USB")
+	(property "Reference" "REF**"
+		(at 0 -1.75 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "4a0b0ea5-eef6-476a-b923-12fe94e8da0d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "WE 744232090"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "1f8bac61-dad7-43ae-b963-373ed935a56c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "18bd8a63-6f51-46ec-80d1-53a2f7b410d5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.we-online.com/components/products/datasheet/744232090.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e28389a2-95ab-4904-a2e0-067fb98e3a38")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "WE-CNSW SMT Common Mode Line Filter Choke USB"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0493cde9-85c3-44ea-bfd4-8ae9f02b4103")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "PN" "744232090"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.CrtYd")
+		(uuid "51b94f53-b24f-4828-847e-a6f5b32d90d6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MANUFACTURER" "Würth Elektronik"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.CrtYd")
+		(uuid "c838acb8-d356-45be-9741-d86c45be166f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.25 -1)
+		(end -2.25 1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "1092010d-879b-47c6-ad12-7765c306c41a")
+	)
+	(fp_line
+		(start -2.25 1)
+		(end 0 1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "55d0fbe5-252c-42a1-811b-21dea559630a")
+	)
+	(fp_line
+		(start 0 -1)
+		(end -2.25 -1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "2fb2c23c-89db-4419-a50b-47e605d66a04")
+	)
+	(fp_line
+		(start 2.25 -1)
+		(end 2.25 1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "aaa4a3ce-a2a8-4a72-b1fd-c4eebd9e9744")
+	)
+	(fp_rect
+		(start -2.25 -1)
+		(end 2.25 1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "7c05e197-8c9b-4b63-9434-83efef19272f")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "2dabb420-506a-4c78-a86d-0d72815f70b7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.5 0.5)
+		(size 1.2 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "2c562584-5519-4ebb-9d0e-4c2d5a77d1c6")
+	)
+	(pad "2" smd rect
+		(at 1.5 0.5)
+		(size 1.2 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "46504920-908b-4341-864e-2cc51eb28202")
+	)
+	(pad "3" smd rect
+		(at 1.5 -0.5)
+		(size 1.2 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "2de8e507-9344-487c-9599-4f5a954de992")
+	)
+	(pad "4" smd rect
+		(at -1.5 -0.5)
+		(size 1.2 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "4425cc89-b812-4ffc-92ed-05977874a005")
+	)
+	(model "${KIPRJMOD}/3D/WE CNSW_1206_CNSW.igs"
+		(offset
+			(xyz 0 0 1.25)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 180 0 0)
+		)
+	)
+)

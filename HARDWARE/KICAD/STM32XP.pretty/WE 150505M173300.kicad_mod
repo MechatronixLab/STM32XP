@@ -1,0 +1,178 @@
+(footprint "WE 150505M173300"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "WL-SFTW SMT Full-color TOP LED Waterclear")
+	(tags "RGB LED PLCC 5050 WE WURTH ELEKTRONIK ")
+	(property "Reference" "REF**"
+		(at 0 -8.128 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "f12e37fd-c0fd-4b1e-863d-7e6b8c94b96f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "WE 150505M173300"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "3ed7fa76-6329-4805-82fc-068a9b762ea3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0cf5f1f3-207c-4ae7-a1df-655286bf15c5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.we-online.com/components/products/datasheet/150505M173300.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2d49692b-8846-443e-932e-e313520c7d5b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8b24bf12-5a25-4309-8d11-873e91a3b6c6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -4 -2.75)
+		(end 4 -2.75)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "37341e9f-6aca-49e4-864d-6f8c619a9527")
+	)
+	(fp_line
+		(start -4 -0.75)
+		(end -4 -2.75)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "1369badc-41fc-4df0-9949-b0eb38279ae8")
+	)
+	(fp_line
+		(start -4 2.75)
+		(end 4 2.75)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "b47f593d-5561-41d0-bd9f-29ff20a1912c")
+	)
+	(fp_rect
+		(start -4 -2.75)
+		(end 4 2.75)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "aff96450-17df-4107-8a8a-2652429ee0d0")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "93fcb72c-fbfa-4441-81cd-43d9a3640eac")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -2.2 -1.5)
+		(size 2.8 1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.2)
+		(uuid "6b9a3c73-d8bf-46ce-8e4e-418f8a097dfd")
+	)
+	(pad "2" smd roundrect
+		(at 2.2 -1.5)
+		(size 2.8 1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.2)
+		(uuid "4a14b13a-afd6-4fdf-88a6-7d97bbf05c73")
+	)
+	(pad "3" smd roundrect
+		(at -2.2 0)
+		(size 2.8 1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.2)
+		(uuid "91e1ea3c-453b-4947-af53-3ecd7d1eee8c")
+	)
+	(pad "4" smd roundrect
+		(at 2.2 0)
+		(size 2.8 1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.2)
+		(uuid "efd380ca-ce2a-46b6-b772-e0bd506d44ea")
+	)
+	(pad "5" smd roundrect
+		(at -2.2 1.5)
+		(size 2.8 1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.2)
+		(uuid "c176b2dc-b9eb-4fde-8075-1451c872f66c")
+	)
+	(pad "6" smd roundrect
+		(at 2.2 1.5)
+		(size 2.8 1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.2)
+		(uuid "ca100172-aab6-4776-855a-7c5b59b32187")
+	)
+	(model "${KIPRJMOD}/3D/WE WL-SFTW-150505M173300 RGB LED PLCC 5050.igs"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

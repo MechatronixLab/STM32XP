@@ -1,0 +1,133 @@
+(footprint "PKM13EPYH4000-A0"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Piezoelectric Sounder / Buzzer Murata 4 kHz")
+	(tags "Passive Buzzer Piezoelectric Murata 4 kHz")
+	(property "Reference" "REF**"
+		(at 0 -7.25 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "b66dff52-9ad3-4680-927b-951920a4429d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "PKM13EPYH4000-A0"
+		(at 0 7.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "1f5cb380-4ffd-4f09-9679-15d8d29c00d7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 6.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "18ca157c-4ca8-41e2-9804-5b9c28db651c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.murata.com/en-us/products/productdetail?partno=PKM13EPYH4000-A0"
+		(at 0 6.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "afdf3adb-be09-4538-a8a0-5ede487b9304")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Piezoelectric Sounder / Buzzer Murata 4 kHz"
+		(at 0 6.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7b747f81-e503-4b4e-bbce-7b917c13217f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_circle
+		(center 0 0)
+		(end 6.5 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "b6897e1d-73d1-447a-b50e-abea824a4fa4")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 6.5 0)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "abd414ab-6b5b-4e94-ae4e-09c5750d1d04")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 9 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "1ff0c089-c851-44ad-bd3e-7d3afe2f4810")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at -2.5 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "dd49c27b-3b31-4284-9271-282f15a94031")
+	)
+	(pad "2" thru_hole circle
+		(at 2.5 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "7e8b11d1-cdd3-4846-a82e-6702e50b0a2f")
+	)
+	(model "${KIPRJMOD}/3D/MURATA PKM13EPYH4000-A0.STEP"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 90 180 0)
+		)
+	)
+)
