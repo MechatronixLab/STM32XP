@@ -9,6 +9,11 @@
 
 void APP_Init(void)
 {
+	BUZZER_SetVolume(1);
+	BUZZER_On();
+	HAL_Delay(250);
+	BUZZER_Off();
+
 	CONSOLE_Init();
 
 	VERSION_Get();
@@ -20,7 +25,6 @@ void APP_Init(void)
 	ADS_Test();
 	ADS_Init();
 
-	BUZZER_SetVolume(1);
 	RGB_On();
 
 	ISR_StartInterruptTimer();
@@ -41,7 +45,7 @@ void APP_Run(void)
 			HAL_GPIO_TogglePin(LED_USER_GPIO_Port, LED_USER_Pin);
 
 			adc_reading = ADS_GetConversion();
-			adc_voltage = (adc_reading * 4096) / 32767;
+			adc_voltage = (adc_reading * 6144) / 32767;
 			CLI_Print("ADS1115[0] = 0x%4x ; %4d mV. \r\n", adc_reading, adc_voltage);
 		}
 
@@ -103,6 +107,7 @@ void APP_Run(void)
 					RGB_SetColor(  0,   0,   0);
 					break;
 			}
+
 			ISR_button = 0;
 
 			BUTTONS_debounced_press = 0;

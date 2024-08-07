@@ -21,7 +21,7 @@ void ADS_Init(void)
 {
 	ADS_Write(ADS_REGISTER_CONFIG, ADS_OS
 			                     | ADS_MUX_AIN0_GND
-								 | ADS_PGA_4096
+								 | ADS_PGA_6144
 								 | ADS_MODE_CONTINUOUS
 			                     | ADS_DATA_RATE_008SPS
 								 | ADS_COMP_MODE_DEFAULT
