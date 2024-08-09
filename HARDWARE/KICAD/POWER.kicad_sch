@@ -3899,6 +3899,21 @@
 		)
 		(uuid "fe270064-04b8-47fd-958f-a1eaa432d273")
 	)
+	(text "2024.08.09:\nR2 = 3.6K // 3.6K\nR3 = 10K\nVOUT = 1.25 * (1 + R3/R2) = 8.2V"
+		(exclude_from_sim no)
+		(at 139.7 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(italic yes)
+				(color 194 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "4219ce78-0de8-48a7-b877-cd40b899172f")
+	)
 	(text "VOUT = 1.25 * (R42/R43)\nhttps://jansson.us/resistors.html"
 		(exclude_from_sim no)
 		(at 165.1 105.41 0)

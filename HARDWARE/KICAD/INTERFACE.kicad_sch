@@ -2990,6 +2990,21 @@
 		)
 		(uuid "fe9d2af4-d992-4d6c-924a-ef0fabf593fc")
 	)
+	(text "2024.08.09:\n10K PULL-DOWN RESISTOR ADDED TO GATE,\nTO PREVENTE NOISE WHEN HANDLING THE BOARD"
+		(exclude_from_sim no)
+		(at 226.06 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(italic yes)
+				(color 194 0 0 1)
+			)
+			(justify right)
+		)
+		(uuid "f2e9dab1-e6fe-496b-89f4-bbf51d2ef91f")
+	)
 	(label "BUZZER DRAIN"
 		(at 226.06 43.18 180)
 		(fields_autoplaced yes)
