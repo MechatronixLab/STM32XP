@@ -37,6 +37,8 @@ void APP_Run(void)
 	int16_t adc_reading = 0;
 	int32_t adc_voltage = 0;
 
+	uint32_t counter = 0;
+
 	while (1)
 	{
 		if (ISR_interrupt_flag)
@@ -46,7 +48,9 @@ void APP_Run(void)
 
 			adc_reading = ADS_GetConversion();
 			adc_voltage = (adc_reading * 6144) / 32767;
-			CLI_Print("ADS1115[0] = 0x%4x ; %4d mV. \r\n", adc_reading, adc_voltage);
+			CLI_Print("UART: Counter: %8d ; ADS1115[0] = 0x%4x ; %4d mV. \r\n", counter, adc_reading, adc_voltage);
+			USB_CDC_Print("USB CDC: Counter: %8d ; ADS1115[0] = 0x%4x ; %4d mV. \r\n", counter, adc_reading, adc_voltage);
+			counter++;
 		}
 
 		if (BUTTONS_debounced_press)

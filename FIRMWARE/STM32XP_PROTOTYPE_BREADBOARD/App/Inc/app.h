@@ -17,6 +17,7 @@
 #include "isr.h"
 #include "rgb.h"
 #include "sdcard.h"
+#include "usb_device_cdc.h"
 
 void APP_Init(void);
 void APP_Run(void);
