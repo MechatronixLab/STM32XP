@@ -43,15 +43,15 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)	// TODO: Debouncing
 
 	switch (GPIO_Pin)
 	{
-		case BUTTON_UP_Pin    :
-		case BUTTON_DOWN_Pin  :
-		case BUTTON_CENTER_Pin:
-		case BUTTON_LEFT_Pin  :
-		case BUTTON_RIGHT_Pin :
+		case BUTTON_UP_Pin   	:
+		case BUTTON_DOWN_Pin  	:
+		case BUTTON_CENTER_Pin	:
+		case BUTTON_LEFT_Pin  	:
+		case BUTTON_RIGHT_Pin 	:
 			CLI_Write("Directional Button pressed: ");
 			break;
 
-		case BUTTON_USER_Pin  :
+		case BUTTON_USER_Pin  	:
 			CLI_Write("USER Button pressed \r\n");
 			break;
 	}

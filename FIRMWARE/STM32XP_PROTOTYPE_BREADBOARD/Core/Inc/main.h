@@ -85,6 +85,8 @@ void Error_Handler(void);
 #define BUTTON_1_Pin GPIO_PIN_9
 #define BUTTON_1_GPIO_Port GPIOA
 #define BUTTON_1_EXTI_IRQn EXTI9_5_IRQn
+#define SD_NIN_Pin GPIO_PIN_10
+#define SD_NIN_GPIO_Port GPIOC
 #define OLED_RST_Pin GPIO_PIN_5
 #define OLED_RST_GPIO_Port GPIOB
 

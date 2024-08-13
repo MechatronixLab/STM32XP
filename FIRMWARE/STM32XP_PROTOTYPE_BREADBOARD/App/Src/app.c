@@ -116,6 +116,15 @@ void APP_Run(void)
 
 			BUTTONS_debounced_press = 0;
 		}
+
+		if (HAL_GPIO_ReadPin(SD_NIN_GPIO_Port, SD_NIN_Pin))
+		{
+			RGB_SetColor(255,   0,   0);
+		}
+		else
+		{
+			RGB_SetColor(  0, 255,   0);
+		}
 	}
 }
 
