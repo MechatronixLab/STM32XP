@@ -31,6 +31,8 @@
 extern uint8_t ISR_interrupt_flag;
 extern uint8_t ISR_button;
 
+extern volatile uint8_t flag_data_sent;
+
 void ISR_StartInterruptTimer(void);
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim);

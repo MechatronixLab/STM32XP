@@ -27,6 +27,15 @@ void APP_Init(void)
 
 	RGB_On();
 
+	NEOPIXEL_Init();
+	NEOPIXEL_Write_Matrix();
+
+	COLORS_R = 0x10;
+	COLORS_G = 0;
+	COLORS_B = 0x10;
+
+	COLORS_state = red;
+
 	ISR_StartInterruptTimer();
 
 	APP_Run();
@@ -51,6 +60,21 @@ void APP_Run(void)
 			CLI_Print("UART: Counter: %8d ; ADS1115[0] = 0x%4x ; %4d mV. \r\n", counter, adc_reading, adc_voltage);
 			USB_CDC_Print("USB CDC: Counter: %8d ; ADS1115[0] = 0x%4x ; %4d mV. \r\n", counter, adc_reading, adc_voltage);
 			counter++;
+
+			// shift LED Matrix
+			for (LED_id = 1; LED_id < NEOPIXEL_MATRIX_NUM_LEDS; LED_id++)
+			{
+				LED_matrix_data[NEOPIXEL_MATRIX_NUM_LEDS - LED_id][0] = LED_matrix_data[NEOPIXEL_MATRIX_NUM_LEDS - LED_id - 1][0];
+				LED_matrix_data[NEOPIXEL_MATRIX_NUM_LEDS - LED_id][1] = LED_matrix_data[NEOPIXEL_MATRIX_NUM_LEDS - LED_id - 1][1];
+				LED_matrix_data[NEOPIXEL_MATRIX_NUM_LEDS - LED_id][2] = LED_matrix_data[NEOPIXEL_MATRIX_NUM_LEDS - LED_id - 1][2];
+			}
+			// new color (sweep)
+			COLORS_Sweep();
+
+			// Add new color to 1st LED
+			NEOPIXEL_Set_Color(0, COLORS_R, COLORS_G, COLORS_B);
+
+			NEOPIXEL_Write_Matrix();
 		}
 
 		if (BUTTONS_debounced_press)
@@ -117,14 +141,14 @@ void APP_Run(void)
 			BUTTONS_debounced_press = 0;
 		}
 
-		if (HAL_GPIO_ReadPin(SD_NIN_GPIO_Port, SD_NIN_Pin))
-		{
-			RGB_SetColor(255,   0,   0);
-		}
-		else
-		{
-			RGB_SetColor(  0, 255,   0);
-		}
+//		if (HAL_GPIO_ReadPin(SD_NIN_GPIO_Port, SD_NIN_Pin))
+//		{
+//			RGB_SetColor(255,   0,   0);
+//		}
+//		else
+//		{
+//			RGB_SetColor(  0, 255,   0);
+//		}
 	}
 }
 

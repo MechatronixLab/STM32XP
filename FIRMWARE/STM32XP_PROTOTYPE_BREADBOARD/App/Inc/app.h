@@ -12,9 +12,11 @@
 
 #include "ads1115.h"
 #include "buzzer.h"
+#include "colors.h"
 #include "console.h"
 #include "display.h"
 #include "isr.h"
+#include "neopixel.h"
 #include "rgb.h"
 #include "sdcard.h"
 #include "usb_device_cdc.h"

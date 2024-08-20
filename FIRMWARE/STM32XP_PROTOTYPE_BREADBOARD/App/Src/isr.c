@@ -88,3 +88,11 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)	// TODO: Debouncing
 //		ISR_button = ISR_BUTTON_RIGHT;
 //	}
 }
+
+volatile uint8_t flag_data_sent = 0;
+
+void HAL_TIM_PWM_PulseFinishedCallback(TIM_HandleTypeDef *htim)
+{
+	HAL_TIM_PWM_Stop_DMA(&htim2, TIM_CHANNEL_1);
+	flag_data_sent = 1;
+}
