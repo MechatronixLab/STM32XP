@@ -18,6 +18,7 @@
 #include "isr.h"
 #include "neopixel.h"
 #include "rgb.h"
+#include "rtcc.h"
 #include "sdcard.h"
 #include "usb_device_cdc.h"
 

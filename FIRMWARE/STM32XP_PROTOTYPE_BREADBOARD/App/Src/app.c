@@ -9,6 +9,8 @@
 
 void APP_Init(void)
 {
+	RTCC_Init();
+
 	BUZZER_SetVolume(1);
 	BUZZER_On();
 	HAL_Delay(250);
@@ -20,7 +22,7 @@ void APP_Init(void)
 
 	DISPLAY_Init();
 
-	SDCARD_Test();
+	//SDCARD_Test();
 
 	ADS_Test();
 	ADS_Init();
@@ -48,8 +50,14 @@ void APP_Run(void)
 
 	uint32_t counter = 0;
 
+	RTC_DateTypeDef RTCC_date;
+	RTC_TimeTypeDef RTCC_time;
+
 	while (1)
 	{
+
+
+
 		if (ISR_interrupt_flag)
 		{
 			ISR_interrupt_flag = 0;
@@ -57,9 +65,19 @@ void APP_Run(void)
 
 			adc_reading = ADS_GetConversion();
 			adc_voltage = (adc_reading * 6144) / 32767;
-			CLI_Print("UART: Counter: %8d ; ADS1115[0] = 0x%4x ; %4d mV. \r\n", counter, adc_reading, adc_voltage);
-			USB_CDC_Print("USB CDC: Counter: %8d ; ADS1115[0] = 0x%4x ; %4d mV. \r\n", counter, adc_reading, adc_voltage);
+//			CLI_Print("UART: Counter: %8d ; ADS1115[0] = 0x%4x ; %4d mV. \r\n", counter, adc_reading, adc_voltage);
+//			USB_CDC_Print("USB CDC: Counter: %8d ; ADS1115[0] = 0x%4x ; %4d mV. \r\n", counter, adc_reading, adc_voltage);
 			counter++;
+
+			if ((counter % 10) == 0)
+			{
+				HAL_RTC_GetTime(&hrtc, &RTCC_time, RTC_FORMAT_BIN);
+				HAL_RTC_GetDate(&hrtc, &RTCC_date, RTC_FORMAT_BIN);
+
+				USB_CDC_Print("20%02d.%02d.%02d %02d:%02d:%02d \r\n",
+								RTCC_date.Year, RTCC_date.Month, RTCC_date.Date,
+								RTCC_time.Hours, RTCC_time.Minutes, RTCC_time.Seconds);
+			}
 
 			// shift LED Matrix
 			for (LED_id = 1; LED_id < NEOPIXEL_MATRIX_NUM_LEDS; LED_id++)
