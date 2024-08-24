@@ -18,11 +18,13 @@
 #define SSD1306_REGISTER_COMMAND	0x80
 #define SSD1306_REGISTER_DATA		0x40
 
+#define SH1106_OFFSET				2		// Set to 0 if using SSD1306
+
 void OLED_SendCommand(uint8_t command);
 void OLED_SendData(uint8_t data);
-void OLED_SetCursor(uint8_t x, uint8_t y);
-void OLED_SetPixel(uint8_t x, uint8_t y);
-void OLED_ResetPixel(uint8_t x, uint8_t y);
+void OLED_SetCursor(uint16_t x, uint8_t y);
+void OLED_SetPixel(uint16_t x, uint8_t y);
+void OLED_ResetPixel(uint16_t x, uint8_t y);
 void OLED_Clear(void);
 void OLED_Init(void);
 

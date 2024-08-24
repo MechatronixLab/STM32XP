@@ -10,6 +10,9 @@
 uint8_t	ISR_interrupt_flag = 0;
 uint8_t ISR_button = 0;
 
+volatile uint8_t ISR_flag_data_sent = 0;
+volatile uint8_t ISR_flag_ADC_EOC = 0;
+
 void ISR_StartInterruptTimer(void)
 {
 	HAL_TIM_Base_Start_IT(&ISR_INTERRUPT_TIMER_HANDLE);
@@ -30,7 +33,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 	}
 }
 
-void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)	// TODO: Debouncing
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
 	__HAL_GPIO_EXTI_CLEAR_IT(BUTTONS_MASK_GPIO);
 	HAL_NVIC_DisableIRQ(EXTI0_IRQn);
@@ -57,42 +60,15 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)	// TODO: Debouncing
 	}
 
 	HAL_TIM_Base_Start_IT(&ISR_DEBOUNCE_TIMER_HANDLER);
-
-//	if (GPIO_Pin == BUTTON_UP_Pin)
-//	{
-//		CLI_Write("UP \n");
-//		ISR_button = ISR_BUTTON_UP;
-//	}
-//
-//	else if (GPIO_Pin == BUTTON_DOWN_Pin)
-//	{
-//		CLI_Write("DOWN \n");
-//		ISR_button = ISR_BUTTON_DOWN;
-//	}
-//
-//	else if (GPIO_Pin == BUTTON_CENTER_Pin)
-//	{
-//		CLI_Write("CENTER \n");
-//		ISR_button = ISR_BUTTON_CENTER;
-//	}
-//
-//	else if (GPIO_Pin == BUTTON_LEFT_Pin)
-//	{
-//		CLI_Write("LEFT \n");
-//		ISR_button = ISR_BUTTON_LEFT;
-//	}
-//
-//	else if (GPIO_Pin == BUTTON_RIGHT_Pin)
-//	{
-//		CLI_Write("RIGHT \n");
-//		ISR_button = ISR_BUTTON_RIGHT;
-//	}
 }
-
-volatile uint8_t flag_data_sent = 0;
 
 void HAL_TIM_PWM_PulseFinishedCallback(TIM_HandleTypeDef *htim)
 {
 	HAL_TIM_PWM_Stop_DMA(&htim2, TIM_CHANNEL_1);
-	flag_data_sent = 1;
+	ISR_flag_data_sent = 1;
+}
+
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
+{	// Interrupção que ocorre quando um conjunto de conversões é finalizado
+	ISR_flag_ADC_EOC = 1;								// Seta flag para tratamento no main()
 }

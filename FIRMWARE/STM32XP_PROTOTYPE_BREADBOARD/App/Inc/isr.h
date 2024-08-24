@@ -9,10 +9,12 @@
 #define INC_ISR_H_
 
 #include "main.h"
+#include "adc.h"
 #include "tim.h"
 
 #include "buttons.h"
 #include "cli.h"
+#include "usb_device_cdc.h"
 
 #define ISR_INTERRUPT_TIMER_HANDLE	htim5
 #define ISR_DEBOUNCE_TIMER_HANDLER  htim10
@@ -31,7 +33,8 @@
 extern uint8_t ISR_interrupt_flag;
 extern uint8_t ISR_button;
 
-extern volatile uint8_t flag_data_sent;
+extern volatile uint8_t ISR_flag_data_sent;
+extern volatile uint8_t ISR_flag_ADC_EOC;
 
 void ISR_StartInterruptTimer(void);
 

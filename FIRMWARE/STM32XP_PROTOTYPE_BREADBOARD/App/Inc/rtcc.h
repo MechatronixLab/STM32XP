@@ -10,7 +10,7 @@
 
 #include "rtc.h"
 
-#define RTC_BKUP_DEFINE_CODE 0xFAFAFA
+#define RTC_BKUP_DEFINE_CODE 0xFAFAFAFA // qu'est que ce?
 
 void RTCC_Init(void);
 

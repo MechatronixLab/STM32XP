@@ -29,21 +29,23 @@ void OLED_SendData(uint8_t data)
 			SSD1306_DEVICE_ADDRESS, I2C_buffer, 2, SSD1306_I2C_TIMEOUT);
 }
 
-void OLED_SetCursor(uint8_t x, uint8_t page)
+void OLED_SetCursor(uint16_t x, uint8_t page)
 {
+	x += SH1106_OFFSET;
+
 	OLED_SendCommand(0x00 + ( x       & 0x0F));
 	OLED_SendCommand(0x10 + ((x >> 4) & 0x0F));
 
 	OLED_SendCommand(0xB0 + page);
 }
 
-void OLED_SetPixel(uint8_t x, uint8_t y)
+void OLED_SetPixel(uint16_t x, uint8_t y)
 {
 	OLED_SetCursor(x, (y / 8));
 	OLED_SendData(0x01 << (y % 8));
 }
 
-void OLED_ResetPixel(uint8_t x, uint8_t y)
+void OLED_ResetPixel(uint16_t x, uint8_t y)
 {
 	OLED_SetCursor(x, (y / 8));
 	OLED_SendData(0x00);
@@ -87,7 +89,7 @@ void OLED_LightBG(void)
 
 void OLED_Init(void)
 {
-//	HAL_GPIO_WritePin(OLED_RESET_GPIO_Port, OLED_RESET_Pin, 0);
+//	HAL_GPIO_WritePin(OLED_RESET_GPIO_Port, OLED_RESET_Pin, 0);	// Necessary for models with RESET pin
 //	HAL_Delay(100);
 //	HAL_GPIO_WritePin(OLED_RESET_GPIO_Port, OLED_RESET_Pin, 1);
 

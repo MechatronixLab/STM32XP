@@ -94,56 +94,49 @@ static const uint8_t MECHATRONIX_LAB_LOGO_64x64[] =
 void DISPLAY_Init(void)
 {
 	uint16_t dt = 1000;
-//	uint8_t i = 0;
+
 	char display_buffer[16];
 
 	OLED_Init();
+	OLED_SetCursor(0, 0);
+
 	GFX_DrawLogo( 0, 0,64,64, (uint8_t *) MECHATRONIX_LAB_LOGO_64x64);
-	OLED_SetCursor(64, 0);
+	OLED_SetCursor(67, 0);
 	GFX_DrawString((uint8_t *)GFX_font_5x7, "  STM32   ");
-	OLED_SetCursor(64, 1);
+	OLED_SetCursor(67, 1);
 	GFX_DrawString((uint8_t *)GFX_font_5x7, " EXPLORER ");
-	OLED_SetCursor(64, 2);
+	OLED_SetCursor(67, 2);
 	GFX_DrawString((uint8_t *)GFX_font_5x7, "  BOARD   ");
-	OLED_SetCursor(64, 6);
+	OLED_SetCursor(67, 6);
 	GFX_DrawString((uint8_t *)GFX_font_5x7, "ENG. ANDRE");
-	OLED_SetCursor(64, 7);
+	OLED_SetCursor(67, 7);
 	GFX_DrawString((uint8_t *)GFX_font_5x7, "A.M.ARAUJO");
 
 	HAL_Delay(dt);
 
 	sprintf(display_buffer, "V: %d.%d.%d  ", V_MAJOR, V_MINOR, V_PATCH);
 
-	OLED_SetCursor(64, 0);
+	OLED_SetCursor(67, 0);
 	GFX_DrawString((uint8_t *)GFX_font_5x7, "STM32XP R0");
-	OLED_SetCursor(64, 1);
+	OLED_SetCursor(67, 1);
 	GFX_DrawString((uint8_t *)GFX_font_5x7, display_buffer); // Version
 
 	sprintf(display_buffer, "%4d.%02d.%02d  ", version_year, version_month, version_day);
-	OLED_SetCursor(64, 2);
+	OLED_SetCursor(67, 2);
 	GFX_DrawString((uint8_t *)GFX_font_5x7, display_buffer);
 
-//	HAL_Delay(2 * dt);
+	HAL_Delay(dt);
 
-//	OLED_Clear();
+	OLED_SetCursor(67, 1);
+	GFX_DrawString((uint8_t *)GFX_font_5x7, "           ");
+	OLED_SetCursor(67, 2);
+	GFX_DrawString((uint8_t *)GFX_font_5x7, "           ");
+	OLED_SetCursor(67, 3);
+	GFX_DrawString((uint8_t *)GFX_font_5x7, "           ");
+	OLED_SetCursor(67, 4);
+	GFX_DrawString((uint8_t *)GFX_font_5x7, "           ");
+	OLED_SetCursor(67, 5);
+	GFX_DrawString((uint8_t *)GFX_font_5x7, "           ");
 
-//	OLED_SetCursor(0, 0);
-//	GFX_DrawString((uint8_t *)GFX_font_5x7, "STM32     ");
-//	OLED_SetCursor(0, 1);
-//	GFX_DrawString((uint8_t *)GFX_font_5x7, "WIRELESS  ");
-//	OLED_SetCursor(0, 2);
-//	GFX_DrawString((uint8_t *)GFX_font_5x7, "INNOVATION");
-//	OLED_SetCursor(0, 3);
-//	GFX_DrawString((uint8_t *)GFX_font_5x7, "DESIGN    ");
-//	OLED_SetCursor(0, 4);
-//	GFX_DrawString((uint8_t *)GFX_font_5x7, "CONTEST   ");
-//	OLED_SetCursor(0, 7);
-//	GFX_DrawString((uint8_t *)GFX_font_5x7, "2024      ");
-//
-//	GFX_DrawLogo(64, 0,64,32, (uint8_t *) ST_LOGO_64x32);
-//	GFX_DrawLogo(64, 4,64,32, (uint8_t *) ELEKTOR_LOGO_64x32);
-//
-//	HAL_Delay(20 * dt);
-//
 //	OLED_Clear();
 }

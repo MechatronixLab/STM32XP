@@ -38,6 +38,8 @@ void APP_Init(void)
 
 	COLORS_state = red;
 
+
+
 	ISR_StartInterruptTimer();
 
 	APP_Run();
@@ -45,13 +47,20 @@ void APP_Init(void)
 
 void APP_Run(void)
 {
-	int16_t adc_reading = 0;
+	int32_t adc_reading = 0;
 	int32_t adc_voltage = 0;
+
+	uint32_t adc_buffer[6];
 
 	uint32_t counter = 0;
 
 	RTC_DateTypeDef RTCC_date;
 	RTC_TimeTypeDef RTCC_time;
+
+	char string_buffer[22];
+
+	//HAL_ADCEx_Calibration_Start(&hadc1);										// Rotina de calibração do ADC
+	//HAL_ADC_Start_DMA(&hadc1, (uint32_t *)adc_buffer, 6);	// Inicia operação do ADC com DMA para canais ativos
 
 	while (1)
 	{
@@ -77,7 +86,21 @@ void APP_Run(void)
 				USB_CDC_Print("20%02d.%02d.%02d %02d:%02d:%02d \r\n",
 								RTCC_date.Year, RTCC_date.Month, RTCC_date.Date,
 								RTCC_time.Hours, RTCC_time.Minutes, RTCC_time.Seconds);
+
+
+				sprintf(string_buffer, "20%02d.%02d.%02d", RTCC_date.Year, RTCC_date.Month, RTCC_date.Date);
+				OLED_SetCursor(67, 2);
+				GFX_DrawString((uint8_t *)GFX_font_5x7, string_buffer);
+
+				sprintf(string_buffer, " %02d:%02d:%02d ", RTCC_time.Hours, RTCC_time.Minutes, RTCC_time.Seconds);
+				OLED_SetCursor(67, 3);
+				GFX_DrawString((uint8_t *)GFX_font_5x7, string_buffer);
+
+				HAL_ADC_Start_DMA(&hadc1, (uint32_t *)adc_buffer, 2);
+
 			}
+
+
 
 			// shift LED Matrix
 			for (LED_id = 1; LED_id < NEOPIXEL_MATRIX_NUM_LEDS; LED_id++)
@@ -93,6 +116,26 @@ void APP_Run(void)
 			NEOPIXEL_Set_Color(0, COLORS_R, COLORS_G, COLORS_B);
 
 			NEOPIXEL_Write_Matrix();
+		}
+
+		if (ISR_flag_ADC_EOC)
+		{
+
+			adc_reading = (adc_buffer[0] * 3300) / 4095;
+
+			sprintf(string_buffer, " %04d \r\n", adc_reading);
+			OLED_SetCursor(67, 4);
+			GFX_DrawString((uint8_t *)GFX_font_5x7, string_buffer);
+
+			adc_reading = (adc_buffer[1] * 3300) / 4095;
+
+			sprintf(string_buffer, " %04d \r\n", adc_reading);
+			OLED_SetCursor(67, 5);
+			GFX_DrawString((uint8_t *)GFX_font_5x7, string_buffer);
+
+			USB_CDC_Print("%04d %04d \r\n", (adc_buffer[0] * 3300) / 4095, (adc_buffer[1] * 3300) / 4095);
+
+			ISR_flag_ADC_EOC = 0;
 		}
 
 		if (BUTTONS_debounced_press)

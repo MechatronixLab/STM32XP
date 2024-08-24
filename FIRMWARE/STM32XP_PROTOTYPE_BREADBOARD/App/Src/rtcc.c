@@ -36,6 +36,25 @@ void RTCC_Init(void)
 
 	// Set to Time/Date from current Time/Date
 
+		sTime.Hours = 13;
+		sTime.Minutes = 36;
+		sTime.Seconds = 0;
+		sTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
+		sTime.StoreOperation = RTC_STOREOPERATION_SET;
+		if (HAL_RTC_SetTime(&hrtc, &sTime, RTC_FORMAT_BIN) != HAL_OK)
+		{
+			Error_Handler();
+		}
+
+		sDate.WeekDay = RTC_WEEKDAY_SATURDAY;
+		sDate.Month = RTC_MONTH_AUGUST;
+		sDate.Date = 24;
+		sDate.Year = 24;
+		if (HAL_RTC_SetDate(&hrtc, &sDate, RTC_FORMAT_BIN) != HAL_OK)
+		{
+			Error_Handler();
+		}
+
 	// Write a data in ad RTC Backup data register
 	HAL_RTCEx_BKUPWrite(&hrtc, RTC_BKP_DR0, RTC_BKUP_DEFINE_CODE);
 	}

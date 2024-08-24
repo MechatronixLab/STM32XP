@@ -56,12 +56,12 @@ void NEOPIXEL_Write(uint8_t red, uint8_t green, uint8_t blue)
 
 	HAL_TIM_PWM_Start_DMA(&htim2, TIM_CHANNEL_1, (uint32_t *)PWM_buffer, 24+50);
 
-	while(!flag_data_sent)	// TODO: fazer timeout
+	while(!ISR_flag_data_sent)	// TODO: fazer timeout
 	{
 		asm("NOP");
 	}
-	flag_data_sent = 0;
-	HAL_DMA_Abort(&hdma_tim2_ch1);
+	ISR_flag_data_sent = 0;
+	//HAL_DMA_Abort(&hdma_tim2_ch1);
 }
 
 
@@ -100,11 +100,11 @@ void NEOPIXEL_Write_Matrix (void)
 	}
 
 	HAL_TIM_PWM_Start_DMA(&htim2, TIM_CHANNEL_1, (uint32_t *)PWM_buffer, index);
-	while(!flag_data_sent)
+	while(!ISR_flag_data_sent)
 	{
 		asm("NOP");
 	}
-	flag_data_sent = 0;
-	HAL_DMA_Abort(&hdma_tim2_ch1);	// Investigando por que no C0 o DMA fica ocupado após primeira interrupção.
-									// Solução paliativa foi usar esta função para "destravar" o DMA.
+	ISR_flag_data_sent = 0;
+	//HAL_DMA_Abort(&hdma_tim2_ch1);	// Investigando por que no C0 o DMA fica ocupado após primeira interrupção.
+										// Solução paliativa foi usar esta função para "destravar" o DMA.
 }
