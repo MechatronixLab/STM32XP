@@ -22,6 +22,8 @@
 #include "sdcard.h"
 #include "usb_device_cdc.h"
 
+#include "st7789.h"
+
 void APP_Init(void);
 void APP_Run(void);
 

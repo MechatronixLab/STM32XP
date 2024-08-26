@@ -18,7 +18,7 @@
 #define SSD1306_REGISTER_COMMAND	0x80
 #define SSD1306_REGISTER_DATA		0x40
 
-#define SH1106_OFFSET				2		// Set to 0 if using SSD1306
+#define SH1106_OFFSET				2		// Set to 0 if using SSD1306 OL
 
 void OLED_SendCommand(uint8_t command);
 void OLED_SendData(uint8_t data);

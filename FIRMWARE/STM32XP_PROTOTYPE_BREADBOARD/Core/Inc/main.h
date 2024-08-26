@@ -62,6 +62,10 @@ void Error_Handler(void);
 #define BUTTON_USER_EXTI_IRQn EXTI15_10_IRQn
 #define LED_USER_Pin GPIO_PIN_5
 #define LED_USER_GPIO_Port GPIOA
+#define ST7789_DC_Pin GPIO_PIN_6
+#define ST7789_DC_GPIO_Port GPIOA
+#define ST7789_RST_Pin GPIO_PIN_7
+#define ST7789_RST_GPIO_Port GPIOA
 #define BUTTON_LEFT_Pin GPIO_PIN_4
 #define BUTTON_LEFT_GPIO_Port GPIOC
 #define BUTTON_LEFT_EXTI_IRQn EXTI4_IRQn
@@ -85,6 +89,8 @@ void Error_Handler(void);
 #define BUTTON_1_Pin GPIO_PIN_9
 #define BUTTON_1_GPIO_Port GPIOA
 #define BUTTON_1_EXTI_IRQn EXTI9_5_IRQn
+#define ST7789_CS_Pin GPIO_PIN_10
+#define ST7789_CS_GPIO_Port GPIOA
 #define SD_NIN_Pin GPIO_PIN_10
 #define SD_NIN_GPIO_Port GPIOC
 #define OLED_RST_Pin GPIO_PIN_5
