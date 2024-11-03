@@ -6,14 +6,14 @@
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
-        "board_outline_line_width": 0.049999999999999996,
-        "copper_line_width": 0.19999999999999998,
+        "board_outline_line_width": 0.05,
+        "copper_line_width": 0.2,
         "copper_text_italic": false,
         "copper_text_size_h": 1.5,
         "copper_text_size_v": 1.5,
         "copper_text_thickness": 0.3,
         "copper_text_upright": false,
-        "courtyard_line_width": 0.049999999999999996,
+        "courtyard_line_width": 0.05,
         "dimension_precision": 4,
         "dimension_units": 3,
         "dimensions": {
@@ -24,13 +24,13 @@
           "text_position": 0,
           "units_format": 1
         },
-        "fab_line_width": 0.09999999999999999,
+        "fab_line_width": 0.1,
         "fab_text_italic": false,
         "fab_text_size_h": 1.0,
         "fab_text_size_v": 1.0,
         "fab_text_thickness": 0.15,
         "fab_text_upright": false,
-        "other_line_width": 0.09999999999999999,
+        "other_line_width": 0.1,
         "other_text_italic": false,
         "other_text_size_h": 1.0,
         "other_text_size_v": 1.0,
@@ -41,17 +41,23 @@
           "height": 1.7,
           "width": 1.7
         },
-        "silk_line_width": 0.09999999999999999,
+        "silk_line_width": 0.1,
         "silk_text_italic": false,
         "silk_text_size_h": 1.0,
         "silk_text_size_v": 1.0,
-        "silk_text_thickness": 0.09999999999999999,
+        "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.19999999999999998
+          "min_clearance": 0.2
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [
         "courtyards_overlap|148832182|97357984|6424a139-078b-4c07-8d95-008f83a0003b|9d0b7bf8-7366-40d6-8857-116845832a34",
         "courtyards_overlap|148832182|99516984|2e9a9426-cf98-4065-b223-bf561f172357|9d0b7bf8-7366-40d6-8857-116845832a34",
@@ -87,6 +93,7 @@
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -128,15 +135,15 @@
         "min_copper_edge_clearance": 0.5,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
-        "min_microvia_diameter": 0.19999999999999998,
-        "min_microvia_drill": 0.09999999999999999,
+        "min_microvia_diameter": 0.2,
+        "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.7999999999999999,
+        "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.0,
-        "min_via_annular_width": 0.09999999999999999,
+        "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
@@ -184,7 +191,9 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -211,7 +220,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -493,7 +507,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "+3.3VA",
-        "pcb_color": "rgb(221, 133, 0)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(221, 133, 0)",
         "track_width": 0.4,
         "via_diameter": 0.6,
@@ -510,7 +524,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "+3VBAT",
-        "pcb_color": "rgb(204, 102, 0)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(204, 102, 0)",
         "track_width": 0.4,
         "via_diameter": 0.6,
@@ -527,7 +541,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "+5V",
-        "pcb_color": "rgb(255, 0, 0)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(255, 0, 0)",
         "track_width": 0.4,
         "via_diameter": 0.6,
@@ -544,7 +558,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "+5VA",
-        "pcb_color": "rgb(194, 0, 0)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(194, 0, 0)",
         "track_width": 0.4,
         "via_diameter": 0.6,
@@ -561,7 +575,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "+V9",
-        "pcb_color": "rgb(194, 0, 194)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(194, 0, 194)",
         "track_width": 0.4,
         "via_diameter": 0.6,
@@ -578,7 +592,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "+VBUS",
-        "pcb_color": "rgb(132, 0, 132)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(132, 0, 132)",
         "track_width": 0.4,
         "via_diameter": 0.6,
@@ -595,7 +609,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "+VCORE",
-        "pcb_color": "rgb(202, 157, 255)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(192, 128, 255)",
         "track_width": 0.2,
         "via_diameter": 0.6,
@@ -612,7 +626,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "+VEXT",
-        "pcb_color": "rgb(72, 0, 72)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(72, 0, 72)",
         "track_width": 0.4,
         "via_diameter": 0.6,
@@ -629,7 +643,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "+VSEL",
-        "pcb_color": "rgb(72, 0, 0)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(72, 0, 0)",
         "track_width": 0.4,
         "via_diameter": 0.6,
@@ -663,7 +677,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "GND",
-        "pcb_color": "rgb(0, 132, 0)",
+        "pcb_color": "rgb(72, 72, 72)",
         "schematic_color": "rgb(0, 132, 0)",
         "track_width": 0.2,
         "via_diameter": 0.6,
@@ -680,7 +694,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "I2C 3.3V",
-        "pcb_color": "rgb(63, 127, 255)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(63, 127, 255)",
         "track_width": 0.2,
         "via_diameter": 0.6,
@@ -697,7 +711,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "I2C 5V",
-        "pcb_color": "rgb(50, 100, 200)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(50, 100, 200)",
         "track_width": 0.2,
         "via_diameter": 0.6,
@@ -714,7 +728,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "SPI",
-        "pcb_color": "rgb(62, 93, 127)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(63, 92, 127)",
         "track_width": 0.2,
         "via_diameter": 0.6,
@@ -731,7 +745,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "SWD",
-        "pcb_color": "rgb(128, 77, 0)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(63, 63, 0)",
         "track_width": 0.2,
         "via_diameter": 0.6,
@@ -835,6 +849,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
