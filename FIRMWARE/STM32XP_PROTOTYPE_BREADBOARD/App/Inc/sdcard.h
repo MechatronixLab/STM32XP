@@ -5,6 +5,8 @@
  *      Author: Eng. André A. M. Araújo
  */
 
+// Based on this tutorial: https://01001000.xyz/2020-08-09-Tutorial-STM32CubeIDE-SD-card/
+
 #ifndef INC_SDCARD_H_
 #define INC_SDCARD_H_
 

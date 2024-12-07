@@ -362,7 +362,9 @@ void APP_Init(void)
 
 	RGB_SetColor(255, 255, 255);
 	SDCARD_Test();
+	HAL_Delay(1000);
 	RGB_SetColor(  0,   0,   0);
+
 
 	ST7789_Init();
 	ST7789_InvertColors(0);
@@ -457,7 +459,7 @@ void APP_Run(void)
 			OLED_SetCursor(67, 5);
 			GFX_DrawString((uint8_t *)GFX_font_5x7, string_buffer);
 
-			USB_CDC_Print("ADC[CH0]: %4d ; ADC[CH1]: %4d ; ADC[VBAT]: %4d \r\n",
+			USB_CDC_Print("ADC[CH0]: %4d mV ; ADC[CH1]: %4d mV ; ADC[VBAT]: %4d mV \r\n",
 								(adc_buffer[0] * 3300) / 4095,
 								(adc_buffer[1] * 3300) / 4095,
 								(adc_buffer[4] * 3300 * 4) / 4095);
@@ -471,37 +473,37 @@ void APP_Run(void)
 			{
 				case (BUTTONS_UP):
 					RGB_SetColor(120, 120,   0);
-					CLI_Write("UP! \r\n");
+					USB_CDC_Print("UP! \r\n");
 					break;
 
 				case (BUTTONS_UP | BUTTONS_RIGHT):
 					RGB_SetColor(180,  60,   0);
-					CLI_Write("UP-RIGHT! \r\n");
+					USB_CDC_Print("UP-RIGHT! \r\n");
 					break;
 
 				case BUTTONS_RIGHT:
 					RGB_SetColor(240,   0,   0);
-					CLI_Write("RIGHT! \r\n");
+					USB_CDC_Print("RIGHT! \r\n");
 					break;
 
 				case (BUTTONS_RIGHT | BUTTONS_DOWN):
 					RGB_SetColor(120, 120,   0);
-					CLI_Write("DOWN-RIGHT! \r\n");
+					USB_CDC_Print("DOWN-RIGHT! \r\n");
 					break;
 
 				case BUTTONS_DOWN:
 					RGB_SetColor(  0, 240,   0);
-					CLI_Write("DOWN! \r\n");
+					USB_CDC_Print("DOWN! \r\n");
 					break;
 
 				case (BUTTONS_DOWN | BUTTONS_LEFT):
 					RGB_SetColor(  0, 120, 120);
-					CLI_Write("DOWN-LEFT! \r\n");
+					USB_CDC_Print("DOWN-LEFT! \r\n");
 					break;
 
 				case BUTTONS_LEFT:
 					RGB_SetColor(  0,   0, 240);
-					CLI_Write("LEFT! \r\n");
+					USB_CDC_Print("LEFT! \r\n");
 					break;
 
 				case (BUTTONS_LEFT | BUTTONS_UP):
@@ -511,7 +513,7 @@ void APP_Run(void)
 
 				case BUTTONS_CENTER:
 					RGB_SetColor( 80,  80,  80);
-					CLI_Write("CENTER! \r\n");
+					USB_CDC_Print("CENTER! \r\n");
 					break;
 
 				case BUTTONS_USER:

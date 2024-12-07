@@ -5,6 +5,8 @@
  *      Author: Eng. André A. M. Araújo
  */
 
+// Based on this tutorial: https://01001000.xyz/2020-08-09-Tutorial-STM32CubeIDE-SD-card/
+
 #include "sdcard.h"
 
 void SDCARD_Test(void)

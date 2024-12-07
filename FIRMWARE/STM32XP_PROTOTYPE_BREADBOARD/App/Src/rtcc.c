@@ -36,8 +36,8 @@ void RTCC_Init(void)
 
 	// Set to Time/Date from current Time/Date
 
-		sTime.Hours = 13;
-		sTime.Minutes = 36;
+		sTime.Hours = 15;
+		sTime.Minutes = 20;
 		sTime.Seconds = 0;
 		sTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
 		sTime.StoreOperation = RTC_STOREOPERATION_SET;
@@ -47,8 +47,8 @@ void RTCC_Init(void)
 		}
 
 		sDate.WeekDay = RTC_WEEKDAY_SATURDAY;
-		sDate.Month = RTC_MONTH_AUGUST;
-		sDate.Date = 24;
+		sDate.Month = RTC_MONTH_DECEMBER;
+		sDate.Date = 7;
 		sDate.Year = 24;
 		if (HAL_RTC_SetDate(&hrtc, &sDate, RTC_FORMAT_BIN) != HAL_OK)
 		{
