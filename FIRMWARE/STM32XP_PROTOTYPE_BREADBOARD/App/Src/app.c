@@ -337,7 +337,7 @@ void APP_Init(void)
 
 	BUZZER_SetVolume(1);
 	BUZZER_On();
-	HAL_Delay(250);
+	HAL_Delay(1000);
 	BUZZER_Off();
 
 	CONSOLE_Init();
@@ -360,10 +360,10 @@ void APP_Init(void)
 
 	COLORS_state = red;
 
-	RGB_SetColor(255, 255, 255);
-	SDCARD_Test();
-	HAL_Delay(1000);
-	RGB_SetColor(  0,   0,   0);
+//	RGB_SetColor(255, 255, 255);
+//	SDCARD_Test();
+//	HAL_Delay(1000);
+//	RGB_SetColor(  0,   0,   0);
 
 
 	ST7789_Init();
