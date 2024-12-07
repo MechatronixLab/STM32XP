@@ -346,8 +346,6 @@ void APP_Init(void)
 
 	DISPLAY_Init();
 
-	//SDCARD_Test();
-
 	ADS_Test();
 	ADS_Init();
 
@@ -361,6 +359,10 @@ void APP_Init(void)
 	COLORS_B = 0x10;
 
 	COLORS_state = red;
+
+	RGB_SetColor(255, 255, 255);
+	SDCARD_Test();
+	RGB_SetColor(  0,   0,   0);
 
 	ST7789_Init();
 	ST7789_InvertColors(0);
@@ -399,8 +401,8 @@ void APP_Run(void)
 
 			adc_reading = ADS_GetConversion();
 			adc_voltage = (adc_reading * 6144) / 32767;
-//			CLI_Print("UART: Counter: %8d ; ADS1115[0] = 0x%4x ; %4d mV. \r\n", counter, adc_reading, adc_voltage);
-//			USB_CDC_Print("USB CDC: Counter: %8d ; ADS1115[0] = 0x%4x ; %4d mV. \r\n", counter, adc_reading, adc_voltage);
+			CLI_Print("UART: Counter: %8d ; ADS1115[0] = %4d mV. \r\n", counter, adc_voltage);
+			//USB_CDC_Print("USB CDC: Counter: %8d ; ADS1115[0] = 0x%4x ; %4d mV. \r\n", counter, adc_reading, adc_voltage);
 			counter++;
 
 			if ((counter % 10) == 0)
@@ -445,21 +447,19 @@ void APP_Run(void)
 		{
 			adc_reading = (adc_buffer[0] * 3300) / 4095;
 
-			sprintf(string_buffer, "A0%4dmV", adc_reading);
+			sprintf(string_buffer, "A0%4ldmV", adc_reading);
 			OLED_SetCursor(67, 4);
 			GFX_DrawString((uint8_t *)GFX_font_5x7, string_buffer);
 
 			adc_reading = (adc_buffer[4] * 3300 * 4) / 4095;
 
-			sprintf(string_buffer, "VB%4dmV", adc_reading);
+			sprintf(string_buffer, "VB%4ldmV", adc_reading);
 			OLED_SetCursor(67, 5);
 			GFX_DrawString((uint8_t *)GFX_font_5x7, string_buffer);
 
-			USB_CDC_Print("ADC[CH0]: %4d ; ADC[CH1]: %4d ; ADC[CH2]: %4d ; ADC[CH3]: %4d ; ADC[VBAT]: %4d \r\n",
+			USB_CDC_Print("ADC[CH0]: %4d ; ADC[CH1]: %4d ; ADC[VBAT]: %4d \r\n",
 								(adc_buffer[0] * 3300) / 4095,
 								(adc_buffer[1] * 3300) / 4095,
-								(adc_buffer[2] * 3300) / 4095,
-								(adc_buffer[3] * 3300) / 4095,
 								(adc_buffer[4] * 3300 * 4) / 4095);
 
 			ISR_flag_ADC_EOC = 0;

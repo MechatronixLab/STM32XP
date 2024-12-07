@@ -89,7 +89,14 @@ void VERSION_Get(void)
 
 	strncpy(aux, build_date + 4, 2);
 
-	version_day = (uint16_t)(((uint8_t)(aux[0]) - '0') * 10 + ((uint8_t)(aux[1]) - '0'));
+	if (aux[0] == ' ')
+	{
+		version_day =                                              (uint8_t)(aux[1]) - '0';
+	}
+	else
+	{
+		version_day = (uint16_t)(((uint8_t)(aux[0]) - '0') * 10 + ((uint8_t)(aux[1]) - '0'));
+	}
 
 	strncpy(aux, build_time, strlen(build_time));
 
