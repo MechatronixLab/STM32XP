@@ -1,4 +1,4 @@
-Copyright (c) 2025 André A. M. Araújo (Mechatronix Lab).
+Copyright (c) 2024 André A. M. Araújo (Mechatronix Lab).
 
 https://cern-ohl.web.cern.ch/
 
