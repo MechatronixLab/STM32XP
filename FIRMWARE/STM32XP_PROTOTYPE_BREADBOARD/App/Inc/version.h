@@ -16,9 +16,9 @@
 #define	V_MINOR		0
 #define V_PATCH		1
 
-#define V_YEAR	 2024
-#define V_MONTH    05
-#define V_DAY      11
+#define V_YEAR	 2025
+#define V_MONTH    01
+#define V_DAY      17
 
 extern char * build_date;
 extern char * build_time;
