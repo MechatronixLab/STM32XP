@@ -4,9 +4,10 @@
   
 This is an educational development board conceived as part of a PCB Design course. The course is offered via [**Portal Embarcados**](https://embarcados.com.br/) website ([**Course Page**](https://cursos.embarcados.com.br/cursos/projeto-de-pcb-para-sistemas-embarcados/)).
 
-## License
-
-This is an open source hardware project licensed under CERN-OHL-P. More details on [license file](./LICENSE.md).
+## License and certification
+This is an open source hardware project licensed under CERN-OHL-P. More details on [LICENSE.md](./LICENSE.md).  
+![OSHW BR000018](./DOC/IMG/certification-mark-BR000018-wide.png)
+[OSHW] BR000018 | Certified open source hardware | [oshwa.org/cert](https://certification.oshwa.org/br000018.html).
 
 ## Board specifications
 
