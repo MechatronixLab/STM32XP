@@ -37,3 +37,25 @@ A simple software application was developed to test each of the subsystems of th
 ![Breadboard testing](./DOC/IMG/STM32XP-BREADBOARD.png)
 
 ![LCD Display and RGB LEDs tests](./DOC/IMG/STM32XP-DISPLAY-AND-LEDs-TEST.png)
+
+# Breadboard Prototype
+
+Before commiting to this design, a breadboard prototype was assembled for validation. This prototype used a Nucleo Board, development modules whenever possible, ICs and discrete electronic components. These parts can be easily acquired on electronics stores worldwide. 
+
+## Parts list
+
+
+| Part                                                                           | Image         |
+|--------------------------------------------------------------------------------|:-------------:|
+| [**NUCLEO-F411RE**](https://www.st.com/en/evaluation-tools/nucleo-f411re.html) |  ![NUCLEO-F411RE](./DOC/IMG/BREADBOARD_PROTOTYPE/NUCLEO_F411RE.avif) |
+| Breadboard Power Supply Module                                                 |  ![NUCLEO-F411RE](./DOC/IMG/BREADBOARD_PROTOTYPE/BREADBOARD_POWER_SUPPLY.jpg) |
+| 1.3" OLED Display Module                                                       |  ![NUCLEO-F411RE](./DOC/IMG/BREADBOARD_PROTOTYPE/OLED_MODULE.jpg) |
+| ADS1115 ADC Module                                                             |  ![NUCLEO-F411RE](./DOC/IMG/BREADBOARD_PROTOTYPE/NUCLEO_F411RE.avif) |
+| Bidirectional Level Shifter Module                                             |  ![NUCLEO-F411RE](./DOC/IMG/BREADBOARD_PROTOTYPE/NUCLEO_F411RE.avif) |
+| Directional Tactile Switch Module                                              |  ![NUCLEO-F411RE](./DOC/IMG/BREADBOARD_PROTOTYPE/NUCLEO_F411RE.avif) |
+| Micro SD Card Module                                                           |  ![NUCLEO-F411RE](./DOC/IMG/BREADBOARD_PROTOTYPE/NUCLEO_F411RE.avif) |
+| LM324N + Passives (Anti-Aliasing Filter)                                       |  ![NUCLEO-F411RE](./DOC/IMG/BREADBOARD_PROTOTYPE/NUCLEO_F411RE.avif) |
+| Passive Buzzer + 2N3904                                                        |  ![NUCLEO-F411RE](./DOC/IMG/BREADBOARD_PROTOTYPE/NUCLEO_F411RE.avif) |
+| [**WSEN-ISDS**](https://www.we-online.com/en/components/products/WSEN-ISDS)    |  ![NUCLEO-F411RE](./DOC/IMG/BREADBOARD_PROTOTYPE/NUCLEO_F411RE.avif) |
+
+
