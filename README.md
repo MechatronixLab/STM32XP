@@ -45,7 +45,7 @@ Before commiting to this design, a breadboard prototype was assembled for valida
 ![Breadboard Prototype](./DOC/IMG/BREADBOARD-PROTOTYPE/BREADBOARD-PROTOTYPE.png)  
 
 ## Parts list
-
+ 
 | Part                                                                                                      | Image                                                              |
 |-----------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------:|
 | [**NUCLEO-F411RE**](https://www.st.com/en/evaluation-tools/nucleo-f411re.html)                            | ![](./DOC/IMG/BREADBOARD-PROTOTYPE/NUCLEO_F411RE.avif)             |
