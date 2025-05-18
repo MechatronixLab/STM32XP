@@ -40,22 +40,23 @@ A simple software application was developed to test each of the subsystems of th
 
 # Breadboard Prototype
 
-Before commiting to this design, a breadboard prototype was assembled for validation. This prototype used a Nucleo Board, development modules whenever possible, ICs and discrete electronic components. These parts can be easily acquired on electronics stores worldwide. 
+Before commiting to this design, a breadboard prototype was assembled for validation. This prototype used a Nucleo Board, development modules whenever possible, ICs and discrete electronic components. These parts can be easily acquired on electronics stores worldwide. The connections between modules follow very closely the [final schematic](https://github.com/MechatronixLab/STM32XP/blob/master/HARDWARE/KICAD/STM32XP.pdf) of the STM32XP Board. The same firmware runs on both the prototype and STM32XP Board.
+
+![Breadboard Prototype](./DOC/IMG/BREADBOARD-PROTOTYPE/BREADBOARD-PROTOTYPE.png)  
 
 ## Parts list
 
-
-| Part                                                                           | Image         |
-|--------------------------------------------------------------------------------|:-------------:|
-| [**NUCLEO-F411RE**](https://www.st.com/en/evaluation-tools/nucleo-f411re.html) |  ![NUCLEO-F411RE](./DOC/IMG/BREADBOARD_PROTOTYPE/NUCLEO_F411RE.avif) |
-| Breadboard Power Supply Module                                                 |  ![NUCLEO-F411RE](./DOC/IMG/BREADBOARD_PROTOTYPE/BREADBOARD_POWER_SUPPLY.jpg) |
-| 1.3" OLED Display Module                                                       |  ![NUCLEO-F411RE](./DOC/IMG/BREADBOARD_PROTOTYPE/OLED_MODULE.jpg) |
-| ADS1115 ADC Module                                                             |  ![NUCLEO-F411RE](./DOC/IMG/BREADBOARD_PROTOTYPE/NUCLEO_F411RE.avif) |
-| Bidirectional Level Shifter Module                                             |  ![NUCLEO-F411RE](./DOC/IMG/BREADBOARD_PROTOTYPE/NUCLEO_F411RE.avif) |
-| Directional Tactile Switch Module                                              |  ![NUCLEO-F411RE](./DOC/IMG/BREADBOARD_PROTOTYPE/NUCLEO_F411RE.avif) |
-| Micro SD Card Module                                                           |  ![NUCLEO-F411RE](./DOC/IMG/BREADBOARD_PROTOTYPE/NUCLEO_F411RE.avif) |
-| LM324N + Passives (Anti-Aliasing Filter)                                       |  ![NUCLEO-F411RE](./DOC/IMG/BREADBOARD_PROTOTYPE/NUCLEO_F411RE.avif) |
-| Passive Buzzer + 2N3904                                                        |  ![NUCLEO-F411RE](./DOC/IMG/BREADBOARD_PROTOTYPE/NUCLEO_F411RE.avif) |
-| [**WSEN-ISDS**](https://www.we-online.com/en/components/products/WSEN-ISDS)    |  ![NUCLEO-F411RE](./DOC/IMG/BREADBOARD_PROTOTYPE/NUCLEO_F411RE.avif) |
+| Part                                                                                                      | Image                                                              |
+|-----------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------:|
+| [**NUCLEO-F411RE**](https://www.st.com/en/evaluation-tools/nucleo-f411re.html)                            | ![](./DOC/IMG/BREADBOARD-PROTOTYPE/NUCLEO_F411RE.avif)             |
+| Breadboard Power Supply Module                                                                            | ![](./DOC/IMG/BREADBOARD-PROTOTYPE/BREADBOARD_POWER_SUPPLY.jpg)    |
+| 1.3" OLED Display Module                                                                                  | ![](./DOC/IMG/BREADBOARD-PROTOTYPE/OLED_MODULE.jpg)                |
+| ADS1115 ADC Module                                                                                        | ![](./DOC/IMG/BREADBOARD-PROTOTYPE/ADS1115_MODULE.jpg)             |
+| Bidirectional Level Shifter Module                                                                        | ![](./DOC/IMG/BREADBOARD-PROTOTYPE/LOGIC_LEVEL_SHIFTER_MODULE.jpg) |
+| Directional Tactile Switch Module                                                                         | ![](./DOC/IMG/BREADBOARD-PROTOTYPE/NAVIGATION_SWITCH_MODULE.jpg)   |
+| Micro SD Card Module                                                                                      | ![](./DOC/IMG/BREADBOARD-PROTOTYPE/MICRO_SD_MODULE.jpg)            |
+| LM324N + Passives (Anti-Aliasing Filter)                                                                  | ![](./DOC/IMG/BREADBOARD-PROTOTYPE/LM324N.PNG)                     |
+| Passive Buzzer + 2N3904                                                                                   | ![](./DOC/IMG/BREADBOARD-PROTOTYPE/BUZZER.png)                     |
+| [**WSEN-ISDS**](https://www.we-online.com/en/components/products/WSEN-ISDS) (Left out of the final design)| ![](./DOC/IMG/BREADBOARD-PROTOTYPE/WSEN-ISDS.png)                  |
 
 
