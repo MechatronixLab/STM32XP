@@ -61,8 +61,6 @@
       "drc_exclusions": [
         "courtyards_overlap|148832182|97357984|6424a139-078b-4c07-8d95-008f83a0003b|9d0b7bf8-7366-40d6-8857-116845832a34",
         "courtyards_overlap|148832182|99516984|2e9a9426-cf98-4065-b223-bf561f172357|9d0b7bf8-7366-40d6-8857-116845832a34",
-        "courtyards_overlap|150864182|97357984|ef97eba3-79c4-43f6-9b5e-9c53f62170c4|9d0b7bf8-7366-40d6-8857-116845832a34",
-        "courtyards_overlap|150864182|99516984|f51a7fe0-0652-4f48-9d79-9f12b59fa74e|9d0b7bf8-7366-40d6-8857-116845832a34",
         "hole_clearance|193885000|93290000|87cac876-3c19-4b2a-9b03-35e1deade893|44bc5eea-4d78-4ac0-b1e7-e788dc01f3dc",
         "hole_clearance|193885000|93290000|87cac876-3c19-4b2a-9b03-35e1deade893|cbc78b91-ec7a-4d01-b8f4-047bafbe3820",
         "hole_clearance|193885000|93490000|87cac876-3c19-4b2a-9b03-35e1deade893|68562be4-fb24-4645-935b-f58148ba4a2b",
@@ -443,7 +441,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "ignore",
       "similar_labels": "warning",
       "simulation_model_issue": "ignore",
